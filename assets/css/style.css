@@ -60,11 +60,34 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  position: relative;
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #213b52;
+  /* background: #213b52; */
+  margin-top:-20px;
 }
+.top{
+  height: 100%;
+  background: url('../img/back-hero.jpg') center center  no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 25px;
+}
+.top::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(26, 46, 64, 0.9);
+  z-index: 1;
+}
+.only-pages{
+  background-color:#1a2e40;
+}
+
 
 #header .logo h1 {
   font-size: 24px;
@@ -87,10 +110,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
+
   padding: 0;
   margin: 0;
-  max-height: 40px;
+ 
+  min-height: 80px;
+  max-height: 130px;
+  min-width: 80px;
+  max-width: 130px;
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -119,16 +148,17 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 17px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "poppins", sans-serif;
 }
-
+.mt-8{
+  margin-top: 10%;
+}
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
   text-decoration: none;
 }
 
 .nav-menu .get-started a {
-  background: #213b52;
   color: #fff;
   border-radius: 50px;
   margin: 2px 0 0 15px;
@@ -215,6 +245,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
+  }
+  #hero .container{
+    margin-top: -60px;
   }
 }
 
@@ -349,10 +382,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-  background: #213b52;
-  background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
+  /* background: #213b52; */
+  position: relative;
+  z-index: 2;
 }
-
+/* #hero .container{
+  margin-top: -60px !important;
+} */
 #hero h1 {
   margin: 0 0 15px 0;
   font-size: 38px;
@@ -389,6 +425,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .hero-img img {
     width: 50%;
+  }
+  #hero .container{
+    margin-top: -40px;
   }
 }
 
@@ -619,6 +658,7 @@ section {
   margin-bottom: 60px;
   position: relative;
   background: transparent;
+  
 }
 
 .services .card-img {
@@ -626,11 +666,14 @@ section {
   margin-left: -30px;
   overflow: hidden;
   z-index: 9;
-  border-radius: 0;
+  
 }
 
 .services .card-img img {
   max-width: 100%;
+  min-width: 100%;
+  height: 300px;
+  min-height: 300px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -665,6 +708,10 @@ section {
   font-weight: 600;
   font-size: 12px;
   transition: 0.3s;
+}
+.services .card .card-body{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .services .read-more a:hover {
@@ -1277,7 +1324,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
+  background: url("../img/back-hero.jpg") center center no-repeat;
+  background-size: cover;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -1290,7 +1338,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(26, 46, 64, 0.85);
+  background: rgba(26, 46, 64, 0.95);
   z-index: 1;
 }
 
@@ -1410,4 +1458,17 @@ section {
     float: none;
     text-align: ceneter;
   }
+}
+.h25{
+  height: 50px;
+}
+.btn-login{
+  border-radius: 100px;
+
+}
+.custom-color{
+  color:#1a2e40 !important;
+}
+.custom-border{
+  border-color: #1a2e40 !important;
 }

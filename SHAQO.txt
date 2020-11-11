@@ -1,0 +1,13 @@
+-- Website : -   ✔
+-- Registration / Signup ✏
+-- Login ✏
+-- dashboard / user 
+
+     -- Bussiness registration
+     -- Search your bussiness/ My bussiness
+
+     -- Search all  Bussiness // Search Registry
+	
+
+     -- Modify Bussiness / Modify Bussiness
+     -- 
