@@ -1,0 +1,20 @@
+=> bussiness owner
+firstname , lastname;
+
+=> business
+name:
+contact-number:
+email:
+logo: 
+
+=> address
+
+street address
+street address 2
+city
+state
+zipcode
+
+=>Types of bussiness
+type of bussiness
+
