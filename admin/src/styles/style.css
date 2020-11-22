@@ -26,6 +26,11 @@ input[type="submit"] {
 	margin: 0;
 	padding: 0;
 }
+.circle{
+	height: 100px !important;
+	width: 100px !important;
+	border-radius: 50% !important;
+}
 body {
 	margin: 0;
 	padding: 0;
