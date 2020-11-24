@@ -257,10 +257,10 @@
       </div>
     </div>
 
-    <!--pages included here-->
+    <!--sidebar included here-->
     <?php
 
-    include("include/pages.php");
+    include("include/sidebar.php");
     
       ?>
     <div class="mobile-menu-overlay"></div>

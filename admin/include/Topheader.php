@@ -147,27 +147,17 @@
               data-toggle="dropdown"
             >
               <span class="user-icon">
-<<<<<<< HEAD
                 <img src="vendors/images/photo1.jpg" alt="" />
               </span>
-              <span class="user-name">Ross C. Lopez</span>
-=======
-<<<<<<< HEAD
-                <img src="vendors/images/photo1.jpg" alt="" />
-              </span>
-              <span class="user-name">Ross C. Lopez</span>
-=======
-                <img src="vendors/images/photo1.jpg" alt="" id="profile_image"/>
-              </span>
-              <span class="user-name" id="user">Ross C. Lopez</span>
->>>>>>> f0ac089e382c747267b66c0fcf520e04499c07f1
->>>>>>> c1770c98b91d289337ff65dd73060720993ee879
+              <span class="user-name"><?php echo $_SESSION['name'] ?></span>
+
+                
             </a>
             <div
               class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
             >
               <a class="dropdown-item" href="profile.php"
-                ><i class="dw dw-user1"></i> Profile</a
+                ><i class="dw dw-user1"></i>Profile</a
               >
               <!-- <a class="dropdown-item" href="profile.php"
                 ><i class="dw dw-settings2"></i> Setting</a
@@ -175,7 +165,7 @@
               <a class="dropdown-item" href="faq.php"
                 ><i class="dw dw-help"></i> Help</a
               > -->
-              <a class="dropdown-item" href="login.php"
+              <a class="dropdown-item" href="./logout.php"
                 ><i class="dw dw-logout"></i> Log Out</a
               >
             </div>

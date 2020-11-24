@@ -1,3 +1,26 @@
+<?php 
+
+session_start();
+
+if(!$_SESSION['isloged']==1)
+{
+  header("Location:./login.php");
+}
+// else{
+// if ($_SESSION['isverified']==1) {
+  if($_SESSION['iscompleted']==0){
+  header("Location:./profile.php?action=completeprofile");
+}
+// }  
+// else{
+//   header("Location:./register.php?action=verify");
+// }
+
+// }
+
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -256,10 +279,10 @@
       </div>
     </div>
 
-  <!--pages included here-->
+  <!--sidebar included here-->
   <?php
 
-include("include/pages.php");
+include("include/sidebar.php");
 
   ?>
     <div class="mobile-menu-overlay"></div>
@@ -276,7 +299,7 @@ include("include/pages.php");
             <div class="col-md-8">
               <h4 class="font-20 weight-500 mb-10 text-capitalize">
                 Welcome back
-                <div class="weight-600 font-30 text-blue" id="system_user" >Mohamed Ali</div>
+                <div class="weight-600 font-30 text-blue" id="system_user" ><?php echo $_SESSION['name'] ?></div>
               </h4>
               <p class="font-18 max-width-600">
                 CIPRA, Companies And Intellectual Property Registration Agency

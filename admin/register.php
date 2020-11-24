@@ -89,6 +89,9 @@
           </div>
           <div class="col-md-6 col-lg-5">
             <div class="register-box bg-white box-shadow border-radius-10 p-1" >
+              <?php 
+              if (!isset($_GET['action'])) {
+              ?>
               <h5 class="text-center my-4 text-uppercase">Account Information</h5>
                 <section class="m-3">
                   <form action="#" method="POST" id="user-registerion">
@@ -126,9 +129,10 @@
                 </form>
                   </section>
                   <?php
-                 if(true) {
+  }
+                 else {
                   ?>
-                  <div id="verify-account" class="mx-2">
+                  <div id="verify-account p-4" class="mx-2">
                     <h5 class="text-center my-4 text-uppercase">Verify Email</h5>
                     <p class="text-center">Your  Verification Code Is sent to <span class="font-weight-bold" id="v-email">me@dumy.so</span> </p>
                     <form action="" id="verification">

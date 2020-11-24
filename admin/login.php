@@ -70,7 +70,7 @@
 						<div class="login-title">
 							<h2 class="text-center text-primary">Login To CIPRA</h2>
 						</div>
-						<form>
+						<form id="loginform">
 							<!-- <div class="select-role">
 								<div class="btn-group btn-group-toggle" data-toggle="buttons">
 									<label class="btn active">
@@ -116,17 +116,9 @@
 										
 											<!-- use code for form submit -->
 											<!-- <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In"> -->
-										
-<<<<<<< HEAD:admin/login.php
-										<a class="btn btn-primary btn-lg btn-block" href="./index2.php">Sign In</a>
-=======
-<<<<<<< HEAD:admin/login.php
-										<a class="btn btn-primary btn-lg btn-block" href="./index2.php">Sign In</a>
-=======
-										<a class="btn btn-primary btn-lg btn-block" name="" href="./index2.php">Sign In</a>
-										<!-- <button type="submit" class="btn btn-primary btn-lg btn-block" name="sign_in">Sign In</button> -->
->>>>>>> f0ac089e382c747267b66c0fcf520e04499c07f1:admin/login.html
->>>>>>> c1770c98b91d289337ff65dd73060720993ee879:admin/login.html
+<!-- 										
+										<a class="btn btn-primary btn-lg btn-block" name="" href="./index2.php">Sign In</a> -->
+										<button type="submit" id="loginbtn" class="btn btn-primary btn-lg btn-block" name="sign_in">Sign In</button>
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
@@ -141,9 +133,11 @@
 		</div>
 	</div>
 	<!-- js -->
+	<!-- <script src="./scripts/jquery-3.5.1.min.js"></script> -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
+	<script src="./scripts/login.js"></script>
 </body>
 </html>
