@@ -83,196 +83,10 @@
 		</div>
 	</div> -->
 
-    <div class="header">
-      <div class="header-left">
-        <div class="menu-icon dw dw-menu"></div>
-        <div
-          class="search-toggle-icon dw dw-search2"
-          data-toggle="header_search"
-        ></div>
-        <div class="header-search">
-          <form>
-            <div class="form-group mb-0">
-              <i class="dw dw-search2 search-icon"></i>
-              <input
-                type="text"
-                class="form-control search-input"
-                placeholder="Search Here"
-              />
-              <div class="dropdown">
-                <a
-                  class="dropdown-toggle no-arrow"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                >
-                  <i class="ion-arrow-down-c"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label"
-                      >From</label
-                    >
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label">To</label>
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label"
-                      >Subject</label
-                    >
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <button class="btn btn-primary">Search</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="header-right">
-        <div class="dashboard-setting user-notification">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle no-arrow"
-              href="javascript:;"
-              data-toggle="right-sidebar"
-            >
-              <i class="dw dw-settings2"></i>
-            </a>
-          </div>
-        </div>
-        <div class="user-notification">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle no-arrow"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-            >
-              <i class="icon-copy dw dw-notification"></i>
-              <span class="badge notification-active"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <div class="notification-list mx-h-350 customscroll">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/img.jpg" alt="" />
-                      <h3>John Doe</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo1.jpg" alt="" />
-                      <h3>Lea R. Frith</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo2.jpg" alt="" />
-                      <h3>Erik L. Richards</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo3.jpg" alt="" />
-                      <h3>John Doe</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo4.jpg" alt="" />
-                      <h3>Renee I. Hansen</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/img.jpg" alt="" />
-                      <h3>Vicki M. Coleman</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-info-dropdown">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-            >
-              <span class="user-icon">
-                <img src="vendors/images/photo1.jpg" alt="" />
-              </span>
-              <span class="user-name">Ross C. Lopez</span>
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-            >
-              <a class="dropdown-item" href="profile.html"
-                ><i class="dw dw-user1"></i> Profile</a
-              >
-              <a class="dropdown-item" href="profile.html"
-                ><i class="dw dw-settings2"></i> Setting</a
-              >
-              <a class="dropdown-item" href="faq.html"
-                ><i class="dw dw-help"></i> Help</a
-              >
-              <a class="dropdown-item" href="login.html"
-                ><i class="dw dw-logout"></i> Log Out</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   <!--Top bar include here -->
+   <?php
+    include("include/Topheader.php");
+  ?>
 
     <div class="right-sidebar">
       <div class="sidebar-title">
@@ -444,69 +258,12 @@
       </div>
     </div>
 
-    <div class="left-side-bar">
-      <div class="brand-logo my-3">
-        <a href="./index2.html">
-          <img src="../assets/img/logo.png" alt="" class="dark-logo" />
-          <img src="../assets/img/logo.png" alt="" class="light-logo" />
-        </a>
-        <div class="close-sidebar" data-toggle="left-sidebar-close">
-          <i class="ion-close-round"></i>
-        </div>
-      </div>
-      <div class="menu-block customscroll">
-        <div class="sidebar-menu icon-style-1 icon-list-style-1">
-          <ul id="accordion-menu">
-            <li>
-              <a href="javascript:" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-house-1"></span
-                ><span class="mtext">Home</span>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="javascript:;" class="dropdown-toggle">
-                <span class="micon dw dw-edit2"></span
-                ><span class="mtext">Bussiness</span>
-              </a>
-              <ul class="submenu">
-                <li>
-                  <a href="./register_bussiness.html">Register New Bussiness</a>
-                </li>
-                <li><a href="./Edit_business.html">Edit Bussiness</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:;" class="dropdown-toggle">
-                  <span class="micon dw dw-edit2"></span
-                  ><span class="mtext">Intellectual Property</span>
-                </a>
-                <ul class="submenu">
-                  <li><a href="./trademark.html">Trade Mark</a></li>
-                  <li><a href="./patent.html">Patent</a></li>
-                  <li><a href="./copyright.html">Copyright</a></li>
-                </ul>
-              </li>
-            <!-- <li>
-						<a href="javascript:" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-list"></span><span class="mtext">My bussiness</span>
-						</a>
-					</li> -->
-            <li>
-              <a href="./search_registry.html" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-search2"></span
-                ><span class="mtext">Search Registry</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-logout"></span
-                ><span class="mtext">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+     <!--pages included here-->
+  <?php
+
+  include("include/pages.php");
+  
+    ?>
     <div class="mobile-menu-overlay"></div>
 
     <div class="main-container">
@@ -544,7 +301,7 @@
             <div class="clearfix mb-20 mt-2">
               <div class="row">
                 <div class="col-8">
-                   <h4 class="text-blue h4">Copyright Applications</h4>
+                   <h4 class="text-blue h4">Patent Applications</h4>
               <!-- <p>Fill the Form to submit patent application</p> -->
                 </div>
                 <div class="col-4 text-right">
@@ -553,13 +310,16 @@
                     New Application</a>
                 </div>
               </div>
+             
+              
             </div>
-           
-            <div id="copyrightList">
-            <table class="data-table table stripe hover nowrap">
-							<thead>
-								<tr>
-									<th class="table-plus datatable-nosort">Name</th>
+            
+            <div id="patentList">
+              
+              <table class="data-table table stripe hover nowrap">
+                <thead>
+                  <tr>
+                    <th class="table-plus datatable-nosort">Name</th>
 									<th>Age</th>
 									<th>Office</th>
 									<th>Address</th>
@@ -798,209 +558,204 @@
 								</tr>
 							</tbody>
             </table>
-            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myLargeModalLabel">Copyright Application Form</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="p-1">
-                      <form class="">
-                          <div class="row">
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Application Number :</label>
-                                <input type="text" class="form-control" disabled />
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Application Type :</label>
-                                <select class="form-control">
-                                  <option>Local</option>
-                                  <option>Forieng</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Copyright Type :</label>
-                               <input type="text" class="form-control">
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Company :</label>
-                                <select class="form-control">
-                                  <option value="0">Select</option>
-                                  <option value="1">My Companies</option>
-                                  <option value="2">Stand alone</option>
-        
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4 d-none">
-                              <div class="form-group">
-                                <label>Your Companies :</label>
-                                <select class="form-control">
-                                  <option value="1">Company 1</option>
-                                  <option value="2">Company 2</option>
-                                  <option value="2">Company 3</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Date oF Application :</label>
-                                <input type="text" class="form-control date-picker" />
-                              </div>
+              
+          </div>
+          <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myLargeModalLabel">Patent Application Form</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                  <div class="p-1">
+                    <form class="">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Application Number :</label>
+                              <input type="text" class="form-control" disabled />
                             </div>
                           </div>
-                         <div class="company-info">
-                           <section>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>Company Name :</label>
-                                          <input type="text" class="form-control" />
-                                        </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Application Type :</label>
+                              <select class="form-control">
+                                <option>Local</option>
+                                <option>Forieng</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Patent Type :</label>
+                             <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Company :</label>
+                              <select class="form-control">
+                                <option value="0">Select</option>
+                                <option value="1">My Companies</option>
+                                <option value="2">Stand alone</option>
+        
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4 d-none">
+                            <div class="form-group">
+                              <label>Your Companies :</label>
+                              <select class="form-control">
+                                <option value="1">Company 1</option>
+                                <option value="2">Company 2</option>
+                                <option value="2">Company 3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Date oF Application :</label>
+                              <input type="text" class="form-control date-picker" />
+                            </div>
+                          </div>
+                        </div>
+                       <div class="company-info">
+                         <section>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Company Name :</label>
+                                        <input type="text" class="form-control" />
                                       </div>
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>Company Type :</label>
-                                          <input type="text" class="form-control" />
-                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Company Type :</label>
+                                        <input type="text" class="form-control" />
                                       </div>
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>Enitity Number :</label>
-                                          <input type="text" class="form-control" />
-                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Enitity Number :</label>
+                                        <input type="text" class="form-control" />
                                       </div>
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>Contact Number :</label>
-                                          <input type="text" class="form-control" />
-                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Contact Number :</label>
+                                        <input type="text" class="form-control" />
                                       </div>
-                  
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>Email :</label>
-                                          <input type="email" class="form-control" />
-                                        </div>
+                                    </div>
+                
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Email :</label>
+                                        <input type="email" class="form-control" />
                                       </div>
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>Comapny Logo :</label>
-                  
-                                          <img
-                                            src="../assets/img/patent2.jpg"
-                                            class="rounded-circle"
-                                            width="100"
-                                            height="200"
-                                          />
-                  
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Comapny Logo :</label>
+                
+                                        <img
+                                          src="../assets/img/patent2.jpg"
+                                          class="rounded-circle"
+                                          width="100"
+                                          height="200"
+                                        />
+                
+                                        <input
+                                          type="file"
+                                          name="logo"
+                                          id="company-logo"
+                                          class="form-control custom d-none"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label
+                                          >Upload Files(Notary,Company Profile,Company Policy)
+                                          :</label
+                                        >
+                                        <div class="custom-file">
                                           <input
                                             type="file"
-                                            name="logo"
-                                            id="company-logo"
-                                            class="form-control custom d-none"
+                                            multiple
+                                            class="custom-file-input"
                                           />
-                                        </div>
-                                      </div>
-                                      <div class="col-md-12">
-                                        <div class="form-group">
-                                          <label
-                                            >Upload Files(Notary,Company Profile,Company Policy)
-                                            :</label
-                                          >
-                                          <div class="custom-file">
-                                            <input
-                                              type="file"
-                                              multiple
-                                              class="custom-file-input"
-                                            />
-                                            <label class="custom-file-label">Choose files</label>
-                                          </div>
+                                          <label class="custom-file-label">Choose files</label>
                                         </div>
                                       </div>
                                     </div>
-                                  </section>
-                                  <h5 class="my-3">Company Address</h5>
-                                  <section>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>Street Address :</label>
-                                          <input type="text" class="form-control" />
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="form-group">
-                                          <label>City :</label>
-                                          <input type="text" class="form-control" />
-                                        </div>
-                                      </div>
-                  
-                                      <div class="col-6 form-group">
-                                        <label>State :</label>
-                                        <input type="text" class="form-control" />
-                                      </div>
-                                      <div class="col-6 form-group">
-                                        <label>Passcode :</label>
+                                  </div>
+                                </section>
+                                <h5 class="my-3">Company Address</h5>
+                                <section>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>Street Address :</label>
                                         <input type="text" class="form-control" />
                                       </div>
                                     </div>
-                                  </section>
-                         </div>
-                                  
-                                 
-                        
-                          <form class="tab-wizard wizard-circle wizard">
-                           
-                            
-                          </form>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label>Title of Work:</label>
-                                <textarea class="form-control"></textarea>
-                              </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <label>City :</label>
+                                        <input type="text" class="form-control" />
+                                      </div>
+                                    </div>
+                
+                                    <div class="col-6 form-group">
+                                      <label>State :</label>
+                                      <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-6 form-group">
+                                      <label>Passcode :</label>
+                                      <input type="text" class="form-control" />
+                                    </div>
+                                  </div>
+                                </section>
+                       </div>
+                      
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Title of Work:</label>
+                              <textarea class="form-control"></textarea>
                             </div>
-                            <div class="col-md-6">
-
-                              <div class="form-group">
-                                <label>Picture/Symbol :</label>
-                                <div class="custom-file">
-                                  <input type="file" class="custom-file-input">
-                                  <label class="custom-file-label">Choose files</label>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label>Documents :</label>
-                                <div class="custom-file">
-                                  <input type="file" class="custom-file-input">
-                                  <label class="custom-file-label">Choose Document</label>
-                                </div>
-                              </div>
-                            </div>
-                            
                           </div>
-                        <!-- <button type="submit" class="btn btn-primary w-25">Submit Application</button> -->
-                      </form>
-                    </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Picture/Symbol :</label>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input">
+                                <label class="custom-file-label">Choose files</label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Documents :</label>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input">
+                                <label class="custom-file-label">Choose Document</label>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      <!-- <button type="submit" class="btn btn-primary w-25">Submit Application</button> -->
+                    </form>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> <i class="dw dw-cancel"></i> Close</button>
-                    <button type="button" class="btn btn-primary"><i class="dw dw-check"></i> Submit Application</button>
-                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> <i class="dw dw-cancel"></i> Close</button>
+                  <button type="button" class="btn btn-primary"><i class="dw dw-check"></i> Submit Application</button>
                 </div>
               </div>
             </div>
           </div>
+         
           </div>
 
           <!-- success Popup html Start -->
