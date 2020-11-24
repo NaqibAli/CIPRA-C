@@ -97,50 +97,54 @@
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Email Address*</label>
                       <div class="col-sm-8">
-                        <input type="email" class="form-control">
+                        <input type="email" name="email_address"class="form-control">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Phone*</label>
                       <div class="col-sm-8">
-                        <input type="phone" class="form-control">
+                        <input type="phone" name="phone"class="form-control">
                       
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Password*</label>
                       <div class="col-sm-8">
-                        <input type="password" class="form-control">
+                        <input type="password" name="password" class="form-control">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Confirm Password*</label>
                       <div class="col-sm-8">
-                        <input type="password" class="form-control">
+                        <input type="password" name="confirm_password" class="form-control">
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <button type="submit" class="btn btn-outline-primary w-100"> <i class="dw dw-add-user mr-2"></i>  Register</button>
+                    <button type="submit" id="Register_account" class="btn btn-outline-primary w-100"> <i class="dw dw-add-user mr-2"></i>  Register</button>
                   </div>
                 </form>
                   </section>
-                  <div id="verify-account" class="mx-2 d-none">
+                  <?php
+                 if(true) {
+                  ?>
+                  <div id="verify-account" class="mx-2">
                     <h5 class="text-center my-4 text-uppercase">Verify Email</h5>
                     <p class="text-center">Your  Verification Code Is sent to <span class="font-weight-bold" id="v-email">me@dumy.so</span> </p>
-                    <form action="">
+                    <form action="" id="verification">
                        <div class="input-group custom mt-4">
                       <div class="input-group-prepend custom">
                         <span class="input-group-text"><i class="dw dw-key"></i></span>
                       </div>
-                      <input type="text" class="form-control text-center font-weight-bold" placeholder="Verification Code">
+                      <input type="text" name="verification_code" class="form-control text-center font-weight-bold" placeholder="Verification Code">
                     </div>
                     <div class="form-group text-center">
-                      <button type="submit" class="btn btn-outline-info w-75"> <i class="dw dw-checked mr-2"></i>  Register</button>
+                      <button type="submit" id="btn_verification" class="btn btn-outline-info w-75"> <i class="dw dw-checked mr-2"></i>  Register</button>
                     </div>
                     </form>
                    
                   </div>
+                 <?php } ?>
                 </div>
                 
             </div>

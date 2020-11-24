@@ -33,6 +33,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD:admin/profile.php
 	<div class="header">
 		<div class="header-left">
 			<div class="menu-icon dw dw-menu"></div>
@@ -159,6 +160,12 @@
 			</div>
 		</div>
 	</div>
+=======
+	      <!--Top bar include here -->
+<?php
+    include("include/Topheader.php");
+  ?>
+>>>>>>> f0ac089e382c747267b66c0fcf520e04499c07f1:admin/profile.html
 
 	<div class="right-sidebar">
 		<div class="sidebar-title">
@@ -272,7 +279,7 @@
 										<div class="modal-content">
 											<div class="modal-body pd-5">
 												<div>
-													<img id="image" src="vendors/images/photo2.jpg" alt="Picture">
+													<img id="image" src="vendors/images/photo2.jpg" alt="Picture" id="profile_image">
 												</div>
 											</div>
 											<div class="modal-footer">
@@ -283,18 +290,19 @@
 									</div>
 								</div>
 							</div>
-							<h5 class="text-center h5 mb-0">Ross C. Lopez</h5>
-							<p class="text-center text-muted font-14">Lorem ipsum dolor sit amet</p>
+							<h5 class="text-center h5 mb-0" id="profile_name">Ross C. Lopez</h5>
+							<p class="text-center text-muted font-14">mss/mrs welcome your profile</p>
 							<div class="profile-info">
 								<h5 class="mb-20 h5 text-blue">Contact Information</h5>
 								<ul>
+			
 									<li>
 										<span>Email Address:</span>
-										FerdinandMChilds@test.com
+										<span id="profile_email">FerdinandMChilds@test.com</span>
 									</li>
 									<li>
 										<span>Phone Number:</span>
-										619-229-0054
+										<span id="profile_phone">619-229-0054</span>
 									</li>
 									<!-- when Completed Profile it will Add This -->
 								</ul>
@@ -645,7 +653,7 @@
 															<div class="row">
 																<div class="col-6"><div class="form-group">
 																	<label>Full Name</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="Full_Name"type="text">
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Nationality</label>
@@ -653,11 +661,11 @@
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Date of birth</label>
-																	<input class="form-control form-control date-picker" type="text">
+																	<input class="form-control form-control date-picker" name="Date_of_birth" type="text">
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Email</label>
-																	<input class="form-control form-control" type="email">
+																	<input class="form-control form-control" name="email" type="email">
 																</div></div>
 																<div class="col-6">
 																	<div class="form-group">
@@ -680,42 +688,42 @@
 																<div class="col-6">	<div class="form-group">
 																	<label>ID type</label>
 																	<select class="selectpicker form-control">
-																		<option>Passport</option>
-																		<option>Driver License</option>
+																		<option value="Passport">Passport</option>
+																		<option value="Driver_License">Driver License</option>
 																	</select>
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>ID Number</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="ID_Number" type="text">
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Race</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="Race" type="text">
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Phone Number</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="Phone_Number" type="text">
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Home Number</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="Home Number" type="text">
 																</div></div>
 																<div class="col-4"><div class="form-group">
 																	<label>Office Number</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="Office_Number" type="text">
 																</div></div>
 																<div class="col-8 row align-items-end">
 																	<div class="col form-group">
 																	<label>Country</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="Country" type="text">
 																	</div>
 																	<div class="col form-group">
 																	<label>State</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="State" type="text">
 																	</div>
 																	<div class="col form-group">
 																	<label>City</label>
-																	<input class="form-control form-control" type="text">
+																	<input class="form-control form-control" name="City" type="text">
 																	</div>
 
 																

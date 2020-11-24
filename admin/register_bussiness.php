@@ -301,39 +301,39 @@
               <p class="mb-30">Fill form to register new bussiness</p>
             </div>
             <div class="wizard-content">
-              <form class="tab-wizard wizard-circle wizard">
+              <form class="tab-wizard wizard-circle wizard" id="reg_business">
                 <h5>Business Information</h5>
                 <section>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Company Name :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control " name="comp_name" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Company Type :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="comp_type" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Enitity Number :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="enit_num" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Contact Number :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="cont_num"/>
                       </div>
                     </div>
 
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Email :</label>
-                        <input type="email" class="form-control" />
+                        <input type="email" class="form-control" name=" com_email" />
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -366,6 +366,7 @@
                             type="file"
                             multiple
                             class="custom-file-input"
+                            name="file"
                           />
                           <label class="custom-file-label">Choose files</label>
                         </div>
@@ -379,23 +380,23 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Street Address :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="stree_add" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>City :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="city" />
                       </div>
                     </div>
 
                     <div class="col-6 form-group">
                       <label>State :</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" name="state" />
                     </div>
                     <div class="col-6 form-group">
                       <label>Passcode :</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" name=passconde />
                     </div>
                   </div>
                 </section>
@@ -406,7 +407,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Director Name:</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="dire_name" />
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -415,6 +416,7 @@
                         <input
                           class="form-control"
                           type="text"
+                          name="id_num"
                         />
                       </div>
                     </div>
@@ -424,6 +426,7 @@
                         <input
                           class="form-control"
                           type="text"
+                          name="profes"
                         />
                       </div>
                     </div>
@@ -433,6 +436,7 @@
                         <input
                           class="form-control"
                           type="text"
+                          name="aca_level"
                         />
                       </div>
                     </div>
@@ -441,6 +445,7 @@
                         <label>Email</label>
                         <input
                           type="email"
+                          name="dir_email"
                           class="form-control"
                           placeholder="Example@example.com"
                         />
@@ -452,6 +457,7 @@
                         <label>Password:</label>
                         <input
                           class="form-control"
+                          name="Pass"
                           placeholder="**********"
                           type="password"
                         />
@@ -464,6 +470,7 @@
                           class="form-control"
                           placeholder="*********"
                           type="password"
+                          name=conf_pass
                         />
                       </div>
                     </div>
