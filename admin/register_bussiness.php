@@ -81,196 +81,10 @@
 		</div>
 	</div> -->
 
-    <div class="header">
-      <div class="header-left">
-        <div class="menu-icon dw dw-menu"></div>
-        <div
-          class="search-toggle-icon dw dw-search2"
-          data-toggle="header_search"
-        ></div>
-        <div class="header-search">
-          <form>
-            <div class="form-group mb-0">
-              <i class="dw dw-search2 search-icon"></i>
-              <input
-                type="text"
-                class="form-control search-input"
-                placeholder="Search Here"
-              />
-              <div class="dropdown">
-                <a
-                  class="dropdown-toggle no-arrow"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                >
-                  <i class="ion-arrow-down-c"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label"
-                      >From</label
-                    >
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label">To</label>
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label"
-                      >Subject</label
-                    >
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <button class="btn btn-primary">Search</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="header-right">
-        <div class="dashboard-setting user-notification">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle no-arrow"
-              href="javascript:;"
-              data-toggle="right-sidebar"
-            >
-              <i class="dw dw-settings2"></i>
-            </a>
-          </div>
-        </div>
-        <div class="user-notification">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle no-arrow"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-            >
-              <i class="icon-copy dw dw-notification"></i>
-              <span class="badge notification-active"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <div class="notification-list mx-h-350 customscroll">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/img.jpg" alt="" />
-                      <h3>John Doe</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo1.jpg" alt="" />
-                      <h3>Lea R. Frith</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo2.jpg" alt="" />
-                      <h3>Erik L. Richards</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo3.jpg" alt="" />
-                      <h3>John Doe</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo4.jpg" alt="" />
-                      <h3>Renee I. Hansen</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/img.jpg" alt="" />
-                      <h3>Vicki M. Coleman</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-info-dropdown">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-            >
-              <span class="user-icon">
-                <img src="vendors/images/photo1.jpg" alt="" />
-              </span>
-              <span class="user-name">Ross C. Lopez</span>
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-            >
-              <a class="dropdown-item" href="profile.html"
-                ><i class="dw dw-user1"></i> Profile</a
-              >
-              <a class="dropdown-item" href="profile.html"
-                ><i class="dw dw-settings2"></i> Setting</a
-              >
-              <a class="dropdown-item" href="faq.html"
-                ><i class="dw dw-help"></i> Help</a
-              >
-              <a class="dropdown-item" href="login.html"
-                ><i class="dw dw-logout"></i> Log Out</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+       <!--Top bar include here -->
+<?php
+    include("include/Topheader.php");
+  ?>
 
     <div class="right-sidebar">
       <div class="sidebar-title">
@@ -442,69 +256,12 @@
       </div>
     </div>
 
-    <div class="left-side-bar">
-      <div class="brand-logo my-3">
-        <a href="./index2.html">
-          <img src="../assets/img/logo.png" alt="" class="dark-logo" />
-          <img src="../assets/img/logo.png" alt="" class="light-logo" />
-        </a>
-        <div class="close-sidebar" data-toggle="left-sidebar-close">
-          <i class="ion-close-round"></i>
-        </div>
-      </div>
-      <div class="menu-block customscroll">
-        <div class="sidebar-menu icon-style-1 icon-list-style-1">
-          <ul id="accordion-menu">
-            <li>
-              <a href="javascript:" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-house-1"></span
-                ><span class="mtext">Home</span>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="javascript:;" class="dropdown-toggle">
-                <span class="micon dw dw-edit2"></span
-                ><span class="mtext">Bussiness</span>
-              </a>
-              <ul class="submenu">
-                <li>
-                  <a href="./register_bussiness.html">Register New Bussiness</a>
-                </li>
-                <li><a href="./Edit_business.html">Edit Bussiness</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="javascript:;" class="dropdown-toggle">
-                <span class="micon dw dw-edit2"></span
-                ><span class="mtext">Intellectual Property</span>
-              </a>
-              <ul class="submenu">
-                <li><a href="./trademark.html">Trade Mark</a></li>
-                <li><a href="./patent.html">Patent</a></li>
-                <li><a href="./copyright.html">Copyright</a></li>
-              </ul>
-            </li>
-            <!-- <li>
-						<a href="javascript:" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-list"></span><span class="mtext">My bussiness</span>
-						</a>
-					</li> -->
-            <li>
-              <a href="./search_registry.html" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-search2"></span
-                ><span class="mtext">Search Registry</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-logout"></span
-                ><span class="mtext">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+   <!--pages included here-->
+   <?php
+
+   include("include/pages.php");
+   
+     ?>
     <div class="mobile-menu-overlay"></div>
 
     <div class="main-container">
@@ -544,39 +301,39 @@
               <p class="mb-30">Fill form to register new bussiness</p>
             </div>
             <div class="wizard-content">
-              <form class="tab-wizard wizard-circle wizard">
+              <form class="tab-wizard wizard-circle wizard" id="reg_business">
                 <h5>Business Information</h5>
                 <section>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Company Name :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control " name="comp_name" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Company Type :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="comp_type" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Enitity Number :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="enit_num" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Contact Number :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="cont_num"/>
                       </div>
                     </div>
 
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Email :</label>
-                        <input type="email" class="form-control" />
+                        <input type="email" class="form-control" name=" com_email" />
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -609,6 +366,7 @@
                             type="file"
                             multiple
                             class="custom-file-input"
+                            name="file"
                           />
                           <label class="custom-file-label">Choose files</label>
                         </div>
@@ -622,23 +380,23 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Street Address :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="stree_add" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>City :</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="city" />
                       </div>
                     </div>
 
                     <div class="col-6 form-group">
                       <label>State :</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" name="state" />
                     </div>
                     <div class="col-6 form-group">
                       <label>Passcode :</label>
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" name=passconde />
                     </div>
                   </div>
                 </section>
@@ -649,7 +407,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Director Name:</label>
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" name="dire_name" />
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -658,6 +416,7 @@
                         <input
                           class="form-control"
                           type="text"
+                          name="id_num"
                         />
                       </div>
                     </div>
@@ -667,6 +426,7 @@
                         <input
                           class="form-control"
                           type="text"
+                          name="profes"
                         />
                       </div>
                     </div>
@@ -676,6 +436,7 @@
                         <input
                           class="form-control"
                           type="text"
+                          name="aca_level"
                         />
                       </div>
                     </div>
@@ -684,6 +445,7 @@
                         <label>Email</label>
                         <input
                           type="email"
+                          name="dir_email"
                           class="form-control"
                           placeholder="Example@example.com"
                         />
@@ -695,6 +457,7 @@
                         <label>Password:</label>
                         <input
                           class="form-control"
+                          name="Pass"
                           placeholder="**********"
                           type="password"
                         />
@@ -707,6 +470,7 @@
                           class="form-control"
                           placeholder="*********"
                           type="password"
+                          name=conf_pass
                         />
                       </div>
                     </div>

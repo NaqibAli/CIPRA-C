@@ -83,197 +83,10 @@
 		</div>
 	</div> -->
 
-    <div class="header">
-      <div class="header-left">
-        <div class="menu-icon dw dw-menu"></div>
-        <div
-          class="search-toggle-icon dw dw-search2"
-          data-toggle="header_search"
-        ></div>
-        <div class="header-search">
-          <form>
-            <div class="form-group mb-0">
-              <i class="dw dw-search2 search-icon"></i>
-              <input
-                type="text"
-                class="form-control search-input"
-                placeholder="Search Here"
-              />
-              <div class="dropdown">
-                <a
-                  class="dropdown-toggle no-arrow"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                >
-                  <i class="ion-arrow-down-c"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label"
-                      >From</label
-                    >
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label">To</label>
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-form-label"
-                      >Subject</label
-                    >
-                    <div class="col-sm-12 col-md-10">
-                      <input
-                        class="form-control form-control-sm form-control-line"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <div class="text-right">
-                    <button class="btn btn-primary">Search</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="header-right">
-        <div class="dashboard-setting user-notification">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle no-arrow"
-              href="javascript:;"
-              data-toggle="right-sidebar"
-            >
-              <i class="dw dw-settings2"></i>
-            </a>
-          </div>
-        </div>
-        <div class="user-notification">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle no-arrow"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-            >
-              <i class="icon-copy dw dw-notification"></i>
-              <span class="badge notification-active"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <div class="notification-list mx-h-350 customscroll">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/img.jpg" alt="" />
-                      <h3>John Doe</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo1.jpg" alt="" />
-                      <h3>Lea R. Frith</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo2.jpg" alt="" />
-                      <h3>Erik L. Richards</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo3.jpg" alt="" />
-                      <h3>John Doe</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/photo4.jpg" alt="" />
-                      <h3>Renee I. Hansen</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="vendors/images/img.jpg" alt="" />
-                      <h3>Vicki M. Coleman</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed...
-                      </p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-info-dropdown">
-          <div class="dropdown">
-            <a
-              class="dropdown-toggle"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-            >
-              <span class="user-icon">
-                <img src="vendors/images/photo1.jpg" alt="" />
-              </span>
-              <span class="user-name">Ross C. Lopez</span>
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-            >
-              <a class="dropdown-item" href="profile.html"
-                ><i class="dw dw-user1"></i> Profile</a
-              >
-              <a class="dropdown-item" href="profile.html"
-                ><i class="dw dw-settings2"></i> Setting</a
-              >
-              <a class="dropdown-item" href="faq.html"
-                ><i class="dw dw-help"></i> Help</a
-              >
-              <a class="dropdown-item" href="login.html"
-                ><i class="dw dw-logout"></i> Log Out</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+     <!--Top bar include here -->
+<?php
+    include("include/Topheader.php");
+  ?>
     <div class="right-sidebar">
       <div class="sidebar-title">
         <h3 class="weight-600 font-16 text-blue">
@@ -444,69 +257,12 @@
       </div>
     </div>
 
-    <div class="left-side-bar">
-      <div class="brand-logo my-3">
-        <a href="./index2.html">
-          <img src="../assets/img/logo.png" alt="" class="dark-logo" />
-          <img src="../assets/img/logo.png" alt="" class="light-logo" />
-        </a>
-        <div class="close-sidebar" data-toggle="left-sidebar-close">
-          <i class="ion-close-round"></i>
-        </div>
-      </div>
-      <div class="menu-block customscroll">
-        <div class="sidebar-menu icon-style-1 icon-list-style-1">
-          <ul id="accordion-menu">
-            <li>
-              <a href="javascript:" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-house-1"></span
-                ><span class="mtext">Home</span>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="javascript:;" class="dropdown-toggle">
-                <span class="micon dw dw-edit2"></span
-                ><span class="mtext">Bussiness</span>
-              </a>
-              <ul class="submenu">
-                <li>
-                  <a href="./register_bussiness.html">Register New Bussiness</a>
-                </li>
-                <li><a href="./Edit_business.html">Edit Bussiness</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="javascript:;" class="dropdown-toggle">
-                <span class="micon dw dw-edit2"></span
-                ><span class="mtext">Intellectual Property</span>
-              </a>
-              <ul class="submenu">
-                <li><a href="./trademark.html">Trade Mark</a></li>
-                <li><a href="./patent.html">Patent</a></li>
-                <li><a href="./copyright.html">Copyright</a></li>
-              </ul>
-            </li>
-            <!-- <li>
-						<a href="javascript:" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-list"></span><span class="mtext">My bussiness</span>
-						</a>
-					</li> -->
-            <li>
-              <a href="./search_registry.html" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-search2"></span
-                ><span class="mtext">Search Registry</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:" class="dropdown-toggle no-arrow">
-                <span class="micon dw dw-logout"></span
-                ><span class="mtext">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+   <!--pages included here-->
+   <?php
+
+   include("include/pages.php");
+   
+     ?>
     <div class="mobile-menu-overlay"></div>
 
     <div class="main-container">
@@ -544,7 +300,7 @@
             <div class="clearfix mb-20 mt-2">
               <div class="row">
                 <div class="col-8">
-                   <h4 class="text-blue h4">Patent Applications</h4>
+                   <h4 class="text-blue h4">Trademark Applications</h4>
               <!-- <p>Fill the Form to submit patent application</p> -->
                 </div>
                 <div class="col-4 text-right">
@@ -553,16 +309,14 @@
                     New Application</a>
                 </div>
               </div>
-             
-              
             </div>
             
-            <div id="patentList">
-              
-              <table class="data-table table stripe hover nowrap">
-                <thead>
-                  <tr>
-                    <th class="table-plus datatable-nosort">Name</th>
+            <div id="trademarkList">
+            
+            <table class="data-table table stripe hover nowrap">
+							<thead>
+								<tr>
+									<th class="table-plus datatable-nosort">Name</th>
 									<th>Age</th>
 									<th>Office</th>
 									<th>Address</th>
@@ -807,49 +561,49 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myLargeModalLabel">Patent Application Form</h4>
+                  <h4 class="modal-title" id="myLargeModalLabel">Trademark Application Form</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
                   <div class="p-1">
-                    <form class="">
+                    <form class="" id="tradeRegis">
                         <div class="row">
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Application Number :</label>
-                              <input type="text" class="form-control" disabled />
+                              <input type="text" class="form-control" disabled name="appli_num" />
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Application Type :</label>
-                              <select class="form-control">
-                                <option>Local</option>
-                                <option>Forieng</option>
+                              <select class="form-control" name="App_type">
+                                <option value="1">Local</option>
+                                <option value="2" >Forieng</option>
                               </select>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label>Patent Type :</label>
-                             <input type="text" class="form-control">
+                              <label>Trademark Type :</label>
+                             <input type="text" class="form-control " name="trade_type">
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Company :</label>
-                              <select class="form-control">
+                              <select class="form-control" name="comp_form">
                                 <option value="0">Select</option>
                                 <option value="1">My Companies</option>
                                 <option value="2">Stand alone</option>
-        
+      
                               </select>
                             </div>
                           </div>
                           <div class="col-md-4 d-none">
                             <div class="form-group">
                               <label>Your Companies :</label>
-                              <select class="form-control">
+                              <select class="form-control" name="chose_comp">
                                 <option value="1">Company 1</option>
                                 <option value="2">Company 2</option>
                                 <option value="2">Company 3</option>
@@ -859,7 +613,7 @@
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Date oF Application :</label>
-                              <input type="text" class="form-control date-picker" />
+                              <input type="text" class="form-control date-picker" name="date_app" />
                             </div>
                           </div>
                         </div>
@@ -869,32 +623,32 @@
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Company Name :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" name="com_name" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Company Type :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" name="com_type" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Enitity Number :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" name="enit_num" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Contact Number :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" name="cont_num" />
                                       </div>
                                     </div>
                 
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Email :</label>
-                                        <input type="email" class="form-control" />
+                                        <input type="email" class="form-control" name="trade_email" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
@@ -926,6 +680,7 @@
                                           <input
                                             type="file"
                                             multiple
+                                            name="file"
                                             class="custom-file-input"
                                           />
                                           <label class="custom-file-label">Choose files</label>
@@ -940,47 +695,50 @@
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Street Address :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" name="stre_add" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>City :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" name="city" />
                                       </div>
                                     </div>
                 
                                     <div class="col-6 form-group">
                                       <label>State :</label>
-                                      <input type="text" class="form-control" />
+                                      <input type="text" class="form-control" name="state" />
                                     </div>
                                     <div class="col-6 form-group">
                                       <label>Passcode :</label>
-                                      <input type="text" class="form-control" />
+                                      <input type="text" class="form-control" name="Passcode"/>
                                     </div>
                                   </div>
                                 </section>
                        </div>
+                                
+                               
                       
+                        
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
                               <label>Title of Work:</label>
-                              <textarea class="form-control"></textarea>
+                              <textarea class="form-control" name="tile_work"></textarea>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
                               <label>Picture/Symbol :</label>
                               <div class="custom-file">
-                                <input type="file" class="custom-file-input">
+                                <input type="file" class="custom-file-input" name="chose_file">
                                 <label class="custom-file-label">Choose files</label>
                               </div>
                             </div>
                             <div class="form-group">
                               <label>Documents :</label>
                               <div class="custom-file">
-                                <input type="file" class="custom-file-input">
+                                <input type="file" class="custom-file-input" name="chose_docum">
                                 <label class="custom-file-label">Choose Document</label>
                               </div>
                             </div>
@@ -998,7 +756,6 @@
               </div>
             </div>
           </div>
-         
           </div>
 
           <!-- success Popup html Start -->
@@ -1046,7 +803,6 @@
     <script src="vendors/scripts/layout-settings.js"></script>
     <script src="src/plugins/jquery-steps/jquery.steps.js"></script>
     <script src="vendors/scripts/steps-setting.js"></script>
-    <script src="./src/scripts/helper.js"></script>
     <script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
 	<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
 	<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
