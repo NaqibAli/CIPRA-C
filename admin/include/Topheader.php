@@ -147,9 +147,15 @@
               data-toggle="dropdown"
             >
               <span class="user-icon">
+<<<<<<< HEAD
                 <img src="vendors/images/photo1.jpg" alt="" />
               </span>
               <span class="user-name">Ross C. Lopez</span>
+=======
+                <img src="vendors/images/photo1.jpg" alt="" id="profile_image"/>
+              </span>
+              <span class="user-name" id="user">Ross C. Lopez</span>
+>>>>>>> f0ac089e382c747267b66c0fcf520e04499c07f1
             </a>
             <div
               class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"

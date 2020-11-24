@@ -574,22 +574,22 @@
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Application Number :</label>
-                              <input type="text" class="form-control" disabled />
+                              <input type="text" name="Application Number" class="form-control" disabled />
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Application Type :</label>
                               <select class="form-control">
-                                <option>Local</option>
-                                <option>Forieng</option>
+                                <option value="Local">Local</option>
+                                <option value="Forieng">Forieng</option>
                               </select>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Patent Type :</label>
-                             <input type="text" class="form-control">
+                             <input type="text" name="Patent Type" class="form-control">
                             </div>
                           </div>
                           <div class="col-md-4">
@@ -616,7 +616,7 @@
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Date oF Application :</label>
-                              <input type="text" class="form-control date-picker" />
+                              <input type="text" name="Date_oF_Application" class="form-control date-picker" />
                             </div>
                           </div>
                         </div>
@@ -626,32 +626,32 @@
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Company Name :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" name="Company_Name" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Company Type :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" name="Company Type" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Enitity Number :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" name="Enitity_Number" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Contact Number :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" name="Contact Number" class="form-control" />
                                       </div>
                                     </div>
                 
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Email :</label>
-                                        <input type="email" class="form-control" />
+                                        <input type="email" name="Email " class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
@@ -663,6 +663,8 @@
                                           class="rounded-circle"
                                           width="100"
                                           height="200"
+                                          name="Comapny_Logo"
+                                          id="Comapny_Logo"
                                         />
                 
                                         <input
@@ -684,6 +686,7 @@
                                             type="file"
                                             multiple
                                             class="custom-file-input"
+                                            name="upload_files"
                                           />
                                           <label class="custom-file-label">Choose files</label>
                                         </div>
@@ -697,23 +700,23 @@
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Street Address :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" name="Street Address" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>City :</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" name="City" />
                                       </div>
                                     </div>
                 
                                     <div class="col-6 form-group">
                                       <label>State :</label>
-                                      <input type="text" class="form-control" />
+                                      <input type="text" name="State" class="form-control" />
                                     </div>
                                     <div class="col-6 form-group">
                                       <label>Passcode :</label>
-                                      <input type="text" class="form-control" />
+                                      <input type="text" name="Passcode" class="form-control" />
                                     </div>
                                   </div>
                                 </section>
@@ -723,21 +726,21 @@
                           <div class="col-md-6">
                             <div class="form-group">
                               <label>Title of Work:</label>
-                              <textarea class="form-control"></textarea>
+                              <textarea class="form-control" name="Title of Work:"></textarea>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
                               <label>Picture/Symbol :</label>
                               <div class="custom-file">
-                                <input type="file" class="custom-file-input">
+                                <input type="file" name="Picture_Symbol" class="custom-file-input">
                                 <label class="custom-file-label">Choose files</label>
                               </div>
                             </div>
                             <div class="form-group">
                               <label>Documents :</label>
                               <div class="custom-file">
-                                <input type="file" class="custom-file-input">
+                                <input type="file" name="Documents" class="custom-file-input">
                                 <label class="custom-file-label">Choose Document</label>
                               </div>
                             </div>

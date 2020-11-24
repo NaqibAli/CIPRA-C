@@ -276,7 +276,7 @@ include("include/pages.php");
             <div class="col-md-8">
               <h4 class="font-20 weight-500 mb-10 text-capitalize">
                 Welcome back
-                <div class="weight-600 font-30 text-blue">Mohamed Ali</div>
+                <div class="weight-600 font-30 text-blue" id="system_user" >Mohamed Ali</div>
               </h4>
               <p class="font-18 max-width-600">
                 CIPRA, Companies And Intellectual Property Registration Agency

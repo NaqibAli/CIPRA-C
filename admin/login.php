@@ -88,13 +88,13 @@
 								</div>
 							</div> -->
 							<div class="input-group custom">
-								<input type="text" class="form-control form-control-lg" placeholder="Username">
+								<input type="text" name="username"class="form-control form-control-lg" placeholder="Username">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
 								</div>
 							</div>
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="**********">
+								<input type="password" name="password"class="form-control form-control-lg" placeholder="**********">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-padlock1"></i></span>
 								</div>
@@ -117,7 +117,12 @@
 											<!-- use code for form submit -->
 											<!-- <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In"> -->
 										
+<<<<<<< HEAD:admin/login.php
 										<a class="btn btn-primary btn-lg btn-block" href="./index2.php">Sign In</a>
+=======
+										<a class="btn btn-primary btn-lg btn-block" name="" href="./index2.php">Sign In</a>
+										<!-- <button type="submit" class="btn btn-primary btn-lg btn-block" name="sign_in">Sign In</button> -->
+>>>>>>> f0ac089e382c747267b66c0fcf520e04499c07f1:admin/login.html
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
