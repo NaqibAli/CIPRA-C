@@ -13,7 +13,7 @@
         <div class="sidebar-menu icon-style-1 icon-list-style-1">
           <ul id="accordion-menu">
             <li>
-              <a href="./index2.php" class="dropdown-toggle no-arrow">
+              <a href="./index.php" class="dropdown-toggle no-arrow">
                 <span class="micon dw dw-house-1"></span
                 ><span class="mtext">Home</span>
               </a>
@@ -21,13 +21,13 @@
             <li class="dropdown">
               <a href="javascript:;" class="dropdown-toggle">
                 <span class="micon dw dw-edit2"></span
-                ><span class="mtext">Bussiness</span>
+                ><span class="mtext">Companies</span>
               </a>
               <ul class="submenu">
                 <li>
-                  <a href="./register_bussiness.php">Register New Bussiness</a>
+                  <a href="./register_bussiness.php">Register New Company</a>
                 </li>
-                <li><a href="./Edit_business.php">Edit Bussiness</a></li>
+                <li><a href="./Edit_business.php">Edit Company</a></li>
               </ul>
             </li>
             <!-- <li>
@@ -49,7 +49,7 @@
             <li>
               <a href="./search_registry.php" class="dropdown-toggle no-arrow">
                 <span class="micon dw dw-search2"></span
-                ><span class="mtext">Search Business</span>
+                ><span class="mtext">Search Company</span>
               </a>
             </li>
             <li>

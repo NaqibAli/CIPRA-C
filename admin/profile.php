@@ -520,7 +520,7 @@ session_start();
 										<!-- Setting Tab start -->
 										<div class="tab-pane fade height-100-p show active" id="setting" role="tabpanel">
 											<div class="profile-setting">
-												<form>
+												<form id="profile">
 													<ul class="profile-edit-list">
 														<li class="weight-500">
 															<h4 class="text-blue h5 mb-20">Edit Your Personal Information</h4>
@@ -531,16 +531,16 @@ session_start();
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Nationality</label>
-																	<select name="nationality" class="selectpicker form-control"></select>
+																	<select name="nationality" class="selectpicker form-control nationality"></select>
 																</div></div>
 																<div class="col-6"><div class="form-group">
 																	<label>Date of birth</label>
 																	<input class="form-control form-control date-picker" name="Date_of_birth" type="text">
 																</div></div>
-																<div class="col-6"><div class="form-group">
+																<!-- <div class="col-6"><div class="form-group">
 																	<label>Email</label>
 																	<input class="form-control form-control" name="email" type="email">
-																</div></div>
+																</div></div> -->
 																<div class="col-6">
 																	<div class="form-group">
 																		<label>Gender</label>
@@ -561,7 +561,7 @@ session_start();
 																	</div></div>
 																<div class="col-6">	<div class="form-group">
 																	<label>ID type</label>
-																	<select class="selectpicker form-control">
+																	<select class="selectpicker form-control" name="idtype">
 																		<option value="Passport">Passport</option>
 																		<option value="Driver_License">Driver License</option>
 																	</select>
@@ -653,8 +653,12 @@ session_start();
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
 	<script src="src/plugins/cropperjs/dist/cropper.js"></script>
+	<script src="src/scripts/helper.js"></script>
+	<script src="./scripts/Profile.js"></script>
 	<script>
+		
 		window.addEventListener('DOMContentLoaded', function () {
+			loadcountries();
 			var image = document.getElementById('image');
 			var cropBoxData;
 			var canvasData;

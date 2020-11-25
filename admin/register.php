@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -94,13 +97,19 @@
               ?>
               <h5 class="text-center my-4 text-uppercase">Account Information</h5>
                 <section class="m-3">
-                  <form action="#" method="POST" id="user-registerion">
+                  <form id="user-registration">
 
                   <div class="form-wrap max-width-600 mx-auto">
                     <div class="form-group row">
+                      <label class="col-sm-4 col-form-label">Full Name*</label>
+                      <div class="col-sm-8">
+                        <input type="text" name="name"class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Email Address*</label>
                       <div class="col-sm-8">
-                        <input type="email" name="email_address"class="form-control">
+                        <input type="email" name="email"class="form-control">
                       </div>
                     </div>
                     <div class="form-group row">
@@ -124,7 +133,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <button type="submit" id="Register_account" class="btn btn-outline-primary w-100"> <i class="dw dw-add-user mr-2"></i>  Register</button>
+                    <button type="submit" id="Register_account" class="btn btn-outline-primary w-100"> <i class="dw dw-add-user mr-2"></i>Register</button>
                   </div>
                 </form>
                   </section>
@@ -133,14 +142,14 @@
                  else {
                   ?>
                   <div id="verify-account p-4" class="mx-2">
-                    <h5 class="text-center my-4 text-uppercase">Verify Email</h5>
-                    <p class="text-center">Your  Verification Code Is sent to <span class="font-weight-bold" id="v-email">me@dumy.so</span> </p>
+                    <h5 class="text-center my-4 text-uppercase">Please Verify your Email</h5>
+                    <p class="text-center">Your  Verification Code Is sent to <span class="font-weight-bold" id="v-email"><?php echo $_SESSION['email'] ?></span> </p>
                     <form action="" id="verification">
                        <div class="input-group custom mt-4">
                       <div class="input-group-prepend custom">
                         <span class="input-group-text"><i class="dw dw-key"></i></span>
                       </div>
-                      <input type="text" name="verification_code" class="form-control text-center font-weight-bold" placeholder="Verification Code">
+                      <input type="text" id="verification_code" class="form-control text-center font-weight-bold" placeholder="Verification Code">
                     </div>
                     <div class="form-group text-center">
                       <button type="submit" id="btn_verification" class="btn btn-outline-info w-75"> <i class="dw dw-checked mr-2"></i>  Register</button>
@@ -166,5 +175,6 @@
     <script src="vendors/scripts/layout-settings.js"></script>
     <script src="src/plugins/jquery-steps/jquery.steps.js"></script>
     <script src="vendors/scripts/steps-setting.js"></script>
+    <script src="./scripts/register.js"></script>
   </body>
 </html>

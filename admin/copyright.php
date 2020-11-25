@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -304,7 +305,7 @@
               <!-- <p>Fill the Form to submit patent application</p> -->
                 </div>
                 <div class="col-4 text-right">
-                  <a href="javascript:" class="btn btn-primary" data-toggle="modal" data-target="#registerModal" >
+                  <a href="javascript:" class="btn btn-primary" data-toggle="modal" data-target="#cregisterModal" >
                     <i class="dw dw-add"></i>
                     New Application</a>
                 </div>
@@ -554,7 +555,7 @@
 								</tr>
 							</tbody>
             </table>
-            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal fade" id="cregisterModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -568,39 +569,40 @@
                             <div class="col-md-4">
                               <div class="form-group">
                                 <label>Application Number :</label>
-                                <input type="text" class="form-control" disabled name="app_num" />
+                                <input type="text" class="form-control" name="appl_num" />
                               </div>
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
                                 <label>Application Type :</label>
-                                <select class="form-control" name="applic_type">
-                                  <option value="1">Local</option>
-                                  <option value="2">Forieng</option>
+                                <select class="form-control selectpicker"  name="applic_type">
+                                  <option value="Local">Local</option>
+                                  <option value="foriegn">Forieng</option>
                                 </select>
                               </div>
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
                                 <label>Copyright Type :</label>
-                               <input type="text" class="form-control" name="comp_type">
+                               <input type="text" class="form-control" name="ip_type">
                               </div>
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                <label>Company :</label>
-                                <select class="form-control" name="comp_form" id="comp_form">
-                                  <option value="0">Select</option>
+                                <label>Company Form :</label>
+                                <select class="form-control selectpicker" name="comp_form" id="comp_form">
+                                  <option value="0">Select Type</option>
                                   <option value="1">My Companies</option>
-                                  <option value="2">Stand alone</option>
+                                  <option value="2">Custom</option>
         
                                 </select>
                               </div>
                             </div>
-                            <div class="col-md-4 d-none">
+                            <div class="col-md-4 d-none" id="mc-parent">
                               <div class="form-group">
                                 <label>Your Companies :</label>
-                                <select class="form-control" name="mycompanies">
+                                <select class="form-control selectpicker" name="mycompanies">
+                                 
                                   <option value="1">Company 1</option>
                                   <option value="2">Company 2</option>
                                   <option value="2">Company 3</option>
@@ -614,7 +616,7 @@
                               </div>
                             </div>
                           </div>
-                         <div class="company-info">
+                         <div id="company-info" class="d-none">
                            <section>
                                     <div class="row">
                                       <div class="col-md-6">
@@ -708,15 +710,11 @@
                                       </div>
                                       <div class="col-6 form-group">
                                         <label>Passcode :</label>
-                                        <input type="text" class="form-control" name=passcode />
+                                        <input type="text" class="form-control"  name="passcode"/>
                                       </div>
                                     </div>
                                   </section>
                          </div>
-                                  
-                                 
-                        
-                          <
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
@@ -749,7 +747,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> <i class="dw dw-cancel"></i> Close</button>
-                    <button type="button" class="btn btn-primary"><i class="dw dw-check"></i> Submit Application</button>
+                    <button type="button" id="submitcopyright" class="btn btn-primary"><i class="dw dw-check"></i> Submit Application</button>
                   </div>
                 </div>
               </div>
@@ -808,6 +806,7 @@
 	<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
   <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
   
-	<script src="vendors/scripts/datatable-setting.js"></script>
+  <script src="vendors/scripts/datatable-setting.js"></script>
+  <script src="./scripts/registrations.js"></script>
   </body>
 </html>

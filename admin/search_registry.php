@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,6 +45,13 @@
 
 		gtag('config', 'UA-119386393-1');
 	</script>
+	<style>
+		.d-company-logo{
+			width:210px !important;
+			height:210px !important;
+		}
+
+	</style>
 </head>
 <body>
 	<!-- <div class="pre-loader">
@@ -61,8 +69,8 @@
 
    <!--Top bar include here -->
    <?php
-    include("include/Topheader.php");
-  ?>
+include "include/Topheader.php";
+?>
 
 	<div class="right-sidebar">
 		<div class="sidebar-title">
@@ -142,9 +150,9 @@
   <!--sidebar included here-->
   <?php
 
-  include("include/sidebar.php");
-  
-    ?>
+include "include/sidebar.php";
+
+?>
 	<div class="mobile-menu-overlay"></div>
 
 	<div class="main-container">
@@ -178,11 +186,33 @@
 					</div>
 				</div> -->
 				<div class="search-icon-box bg-white box-shadow border-radius-10 mb-30">
-					<input type="text" class="border-radius-10" id="filter_input" placeholder="Search Registry..." title="Type in a name">
-					<i class="search_icon dw dw-search"></i>
+					<input type="text" class="border-radius-10" id="filter_input" placeholder="Enter Company ID or Company Name..." title="Type in a name ">
+					<i class="search_icon dw dw-search "></i>
 				</div>
+				<div class="row m-1 rounded">
+					<div class="col-md-3 m-1 card">
+					<div class="card-body text-center">
+						<img src="./src/images/banner-img.png" class="d-company-logo ml-auto" alt="">
+						<div class="text-content">
+							<h5 class="my-3">Name: Hormuud Telecom</h5>
+						<p class="text-secondary">ID: 21343232535</p>
+						</div>
+
+						<button class="btn btn-outline-primary my-2 w-75 btn-lg">More Info</button>
+					</div>
+				</div>
+					<div class="col-md-3 m-1 card">
+					<div class="card-body">
+						<img src="./src/images/hrlogo.png"  class="d-company-logo ml-auto" alt="">
+						<h5 class="my-3">Name: Hormuud Telecom</h5>
+						<p class="text-secondary">ID: 21343232535</p>
+						<button class="btn btn-outline-primary my-2 w-75 btn-lg">More Info</button>
+					</div>
+				</div>
+				</div>
+
 			</div>
-			<div class="footer-wrap pd-20 mb-20 card-box">
+			<div class="footer-wrap pd-20 mb-20 mt-4 card-box">
                 CIPRA - Companies And Intellectual Property Registration Agency,
                 Developed by <a href="javascript:" target="_blank">HanTech</a>
               </div>

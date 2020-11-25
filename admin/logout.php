@@ -2,7 +2,7 @@
 
 session_start();
 session_destroy();
-session_unset();
+$_SESSION['isloged'] = 0;
 
 header("Location:./login.php");
 

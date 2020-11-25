@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -569,18 +570,18 @@
                 </div>
                 <div class="modal-body">
                   <div class="p-1">
-                    <form class="">
+                    <form id="patentform">
                         <div class="row">
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Application Number :</label>
-                              <input type="text" name="Application Number" class="form-control" disabled />
+                              <input type="text" name="appl_num" class="form-control" />
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Application Type :</label>
-                              <select class="form-control">
+                              <select class="form-control selectpicker" name="applic_type">
                                 <option value="Local">Local</option>
                                 <option value="Forieng">Forieng</option>
                               </select>
@@ -589,24 +590,23 @@
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Patent Type :</label>
-                             <input type="text" name="Patent Type" class="form-control">
+                             <input type="text" name="ip_type" class="form-control">
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Company :</label>
-                              <select class="form-control">
-                                <option value="0">Select</option>
+                              <select class="form-control selectpicker" name="comp_form" id="comp_form">
                                 <option value="1">My Companies</option>
                                 <option value="2">Stand alone</option>
         
                               </select>
                             </div>
                           </div>
-                          <div class="col-md-4 d-none">
+                          <div class="col-md-4" id="mc-parent">
                             <div class="form-group">
                               <label>Your Companies :</label>
-                              <select class="form-control">
+                              <select class="form-control selectpicker" name="mycompanies">
                                 <option value="1">Company 1</option>
                                 <option value="2">Company 2</option>
                                 <option value="2">Company 3</option>
@@ -616,42 +616,42 @@
                           <div class="col-md-4">
                             <div class="form-group">
                               <label>Date oF Application :</label>
-                              <input type="text" name="Date_oF_Application" class="form-control date-picker" />
+                              <input type="text" name="date" class="form-control date-picker" />
                             </div>
                           </div>
                         </div>
-                       <div class="company-info">
+                       <div id="company-info"  class="d-none">
                          <section>
                                   <div class="row">
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Company Name :</label>
-                                        <input type="text" name="Company_Name" class="form-control" />
+                                        <input type="text" name="comp_name" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Company Type :</label>
-                                        <input type="text" name="Company Type" class="form-control" />
+                                        <input type="text" name="comp_type" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Enitity Number :</label>
-                                        <input type="text" name="Enitity_Number" class="form-control" />
+                                        <input type="text" name="enty_num" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Contact Number :</label>
-                                        <input type="text" name="Contact Number" class="form-control" />
+                                        <input type="text" name="cont_num" class="form-control" />
                                       </div>
                                     </div>
                 
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Email :</label>
-                                        <input type="email" name="Email " class="form-control" />
+                                        <input type="email" name="email" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
@@ -686,7 +686,7 @@
                                             type="file"
                                             multiple
                                             class="custom-file-input"
-                                            name="upload_files"
+                                            name="file"
                                           />
                                           <label class="custom-file-label">Choose files</label>
                                         </div>
@@ -700,23 +700,23 @@
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Street Address :</label>
-                                        <input type="text" name="Street Address" class="form-control" />
+                                        <input type="text" name="comp_add" class="form-control" />
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>City :</label>
-                                        <input type="text" class="form-control" name="City" />
+                                        <input type="text" class="form-control" name="city" />
                                       </div>
                                     </div>
                 
                                     <div class="col-6 form-group">
                                       <label>State :</label>
-                                      <input type="text" name="State" class="form-control" />
+                                      <input type="text" name="state" class="form-control" />
                                     </div>
                                     <div class="col-6 form-group">
                                       <label>Passcode :</label>
-                                      <input type="text" name="Passcode" class="form-control" />
+                                      <input type="text" name="passcode" class="form-control" />
                                     </div>
                                   </div>
                                 </section>
@@ -726,21 +726,21 @@
                           <div class="col-md-6">
                             <div class="form-group">
                               <label>Title of Work:</label>
-                              <textarea class="form-control" name="Title of Work:"></textarea>
+                              <textarea class="form-control" name="tile_work"></textarea>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
                               <label>Picture/Symbol :</label>
                               <div class="custom-file">
-                                <input type="file" name="Picture_Symbol" class="custom-file-input">
+                                <input type="file" name="picture" class="custom-file-input">
                                 <label class="custom-file-label">Choose files</label>
                               </div>
                             </div>
                             <div class="form-group">
                               <label>Documents :</label>
                               <div class="custom-file">
-                                <input type="file" name="Documents" class="custom-file-input">
+                                <input type="file" name="document" class="custom-file-input">
                                 <label class="custom-file-label">Choose Document</label>
                               </div>
                             </div>
@@ -753,7 +753,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> <i class="dw dw-cancel"></i> Close</button>
-                  <button type="button" class="btn btn-primary"><i class="dw dw-check"></i> Submit Application</button>
+                  <button type="button" id="patentregistration" class="btn btn-primary"><i class="dw dw-check"></i> Submit Application</button>
                 </div>
               </div>
             </div>
@@ -812,6 +812,8 @@
 	<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
   <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
   
-	<script src="vendors/scripts/datatable-setting.js"></script>
+  <script src="vendors/scripts/datatable-setting.js"></script>
+  <script src="./scripts/registrations.js"></script>
+  <script src="./src/scripts/helper.js"></script>
   </body>
 </html>

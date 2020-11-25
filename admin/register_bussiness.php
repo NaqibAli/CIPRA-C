@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,6 +51,7 @@
       href="src/plugins/jquery-steps/jquery.steps.css"
     />
     <link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/sweetalert2/sweetalert2.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -308,7 +310,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Company Name :</label>
-                        <input type="text" class="form-control " name="comp_name" />
+                        <input type="text" class="form-control " name="company_name" />
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -426,7 +428,7 @@
                         <input
                           class="form-control"
                           type="text"
-                          name="profes"
+                          name="profession"
                         />
                       </div>
                     </div>
@@ -436,7 +438,7 @@
                         <input
                           class="form-control"
                           type="text"
-                          name="aca_level"
+                          name="academy_level"
                         />
                       </div>
                     </div>
@@ -445,7 +447,7 @@
                         <label>Email</label>
                         <input
                           type="email"
-                          name="dir_email"
+                          name="director_email"
                           class="form-control"
                           placeholder="Example@example.com"
                         />
@@ -526,5 +528,8 @@
     <script src="vendors/scripts/layout-settings.js"></script>
     <script src="src/plugins/jquery-steps/jquery.steps.js"></script>
     <script src="vendors/scripts/steps-setting.js"></script>
+    <script src="./scripts/registrations.js"></script>
+    <script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
   </body>
+
 </html>

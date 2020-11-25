@@ -149,7 +149,7 @@
               <span class="user-icon">
                 <img src="vendors/images/photo1.jpg" alt="" />
               </span>
-              <span class="user-name"><?php echo $_SESSION['name'] ?></span>
+              <span class="user-name text-capitalize"><?php echo $_SESSION['name'] ?></span>
 
                 
             </a>
