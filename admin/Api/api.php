@@ -58,7 +58,11 @@ function OwnerReg($conn){
         if ($row['message']) {
             $data = array("status" => true, "data" => $row['message']);
             $_SESSION['email']=$email;
+<<<<<<< HEAD
+            sendemail($code,$email);
+=======
             sendemail($row['Vcode'],$email);
+>>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
         } else {
             $data = array("status" => false, "data" => "error");
             
@@ -222,7 +226,11 @@ function sendemail($code,$email){
     <title>Email Verification</title>
     </head>
     <body>
+<<<<<<< HEAD
+    <p>Verification Code : <strong>${code}</strong></p>
+=======
     <p>Verification Code : <strong>$code</strong></p>
+>>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
     </body>
     </html>
     ";
@@ -263,4 +271,91 @@ function getCompanies($conn){
     }
 
     echo json_encode($data);
+<<<<<<< HEAD
+}
+
+function gettrademark($conn){
+    $uid=$_SESSION['userid'];
+    $trade="trademark";
+
+    $query = "call show_intellec_reg('$uid','$trade')";
+
+    $res = $conn->query($query);
+    $data = [];
+    if ($res) {
+        $row = $res->fetch_assoc();
+        while($row = $res->fetch_assoc()){
+            $data[]=$row;
+        }
+        if ($res->num_rows>0) {
+            $data = array("status" => true, "data" => $data);
+        }
+        else {
+            $data = array("status" => false, "data" => "No Data Found"); 
+        }
+        
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
+}
+
+
+function getcopyright($conn){
+    $uid=$_SESSION['userid'];
+    $copy="copyright";
+
+    $query = "call show_intellec_reg('$uid','$copy')";
+
+    $res = $conn->query($query);
+    $data = [];
+    if ($res) {
+        $row = $res->fetch_assoc();
+        while($row = $res->fetch_assoc()){
+            $data[]=$row;
+        }
+        if ($res->num_rows>0) {
+            $data = array("status" => true, "data" => $data);
+        }
+        else {
+            $data = array("status" => false, "data" => "No Data Found"); 
+        }
+        
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
+}
+
+
+
+function getpatent($conn){
+    $uid=$_SESSION['userid'];
+    $copy="patent";
+
+    $query = "call show_intellec_reg('$uid','$copy')";
+
+    $res = $conn->query($query);
+    $data = [];
+    if ($res) {
+        $row = $res->fetch_assoc();
+        while($row = $res->fetch_assoc()){
+            $data[]=$row;
+        }
+        if ($res->num_rows>0) {
+            $data = array("status" => true, "data" => $data);
+        }
+        else {
+            $data = array("status" => false, "data" => "No Data Found"); 
+        }
+        
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
+=======
+>>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
 }
