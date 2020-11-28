@@ -50,6 +50,8 @@ session_start();
       href="src/plugins/jquery-steps/jquery.steps.css"
     />
     <link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+    
+    <link rel="stylesheet" type="text/css" href="src/plugins/sweetalert2/sweetalert2.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -175,6 +177,8 @@ session_start();
     <script src="vendors/scripts/layout-settings.js"></script>
     <script src="src/plugins/jquery-steps/jquery.steps.js"></script>
     <script src="vendors/scripts/steps-setting.js"></script>
+    <script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
     <script src="./scripts/register.js"></script>
+
   </body>
 </html>

@@ -22,7 +22,14 @@ $("#loginform").on("submit",(e)=>{
              window.location.href="./index.php";
          }
          else{
-             alert("Error");
+             swal(
+                {
+                    position: 'center',
+                    type: 'error',
+                    title: (data == 'invalid')?"Incorrect Credential":"You account Is Blocked, Please Contact System Administrator",
+                    showConfirmButton: false,
+                    timer: 2500
+                }); 
          }
       
       }});

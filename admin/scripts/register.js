@@ -47,10 +47,17 @@ $("#verification").on("submit",(e)=>{
          console.log(data)
          if(status){
              if(data=="verified"){
-                alert("your account is verified"); 
+                swal(
+                    {
+                        position: 'center',
+                        type: 'success',
+                        title: "Your Account Is Verified! Welcome",
+                        showConfirmButton: false,
+                        timer: 2000
+                    }); 
                 setTimeout(() => {
                     window.location.href="./index.php";
-                }, 1000);
+                }, 2000);
 
              }
              else{
@@ -59,7 +66,14 @@ $("#verification").on("submit",(e)=>{
             
          }
          else{
-             alert("Verification Code Error");
+            swal(
+                {
+                    position: 'center',
+                    type: 'success',
+                    title: "Verification Code Is Incorrect",
+                    showConfirmButton: false,
+                    timer: 2000
+                });
          }
       
       }});

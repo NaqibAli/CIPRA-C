@@ -33,6 +33,8 @@
 	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+	
+    <link rel="stylesheet" type="text/css" href="src/plugins/sweetalert2/sweetalert2.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -138,6 +140,7 @@
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
+	<script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
 	<script src="./scripts/login.js"></script>
 </body>
 </html>
