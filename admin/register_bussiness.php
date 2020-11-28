@@ -17,6 +17,9 @@ else{
     header("Location:./register.php?action=verify");
   }
   }
+  else {
+    header("Location:./index.php");
+  }
 
 
 }
@@ -555,6 +558,8 @@ else{
     <script src="./scripts/registrations.js"></script>
     <script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
     <script src="./src/scripts/helper.js"></script>
+    <script src="./scripts/jquery.validate.min.js"></script>
+<script src="./scripts/validations.js"></script>
   </body>
 
 </html>

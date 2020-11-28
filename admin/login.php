@@ -3,7 +3,7 @@
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+	<title>CIPRA - Companies And Intellectual Property Registration Agency</title>
 
 	<!-- Site favicon -->
 	<link
@@ -142,5 +142,7 @@
 	<script src="vendors/scripts/layout-settings.js"></script>
 	<script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
 	<script src="./scripts/login.js"></script>
+	<script src="./scripts/jquery.validate.min.js"></script>
+<script src="./scripts/validations.js"></script>
 </body>
 </html>

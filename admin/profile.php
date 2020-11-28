@@ -202,7 +202,12 @@ else{
 								</div>
 							</div>
 							<h5 class="text-center h5 mb-0" id="profile_name"><?php echo $_SESSION['name'] ?></h5>
-							<p class="text-center text-muted font-14">mss/mrs welcome your profile</p>
+							<p class="text-center text-muted font-14">
+						<?php if($_SESSION['usertype']==3) 
+						echo($_SESSION['proffession']);
+						else 
+						echo("Mss/Mrs Welcome Your Profile"); ?>	
+							</p>
 							<div class="profile-info">
 								<h5 class="mb-20 h5 text-blue">Contact Information</h5>
 								<ul>
@@ -211,10 +216,12 @@ else{
 										<span>Email Address:</span>
 										<?php echo $_SESSION['email'] ?>
 									</li>
+									<?php if($_SESSION['usertype']==2){?>
 									<li>
 										<span>Phone Number:</span>
 										<?php echo $_SESSION['phone'] ?>
 									</li>
+									<?php } ?>
 									<!-- when Completed Profile it will Add This -->
 								</ul>
 							</div>

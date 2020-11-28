@@ -4,6 +4,20 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ .waiting{
+   padding:5px;
+   background-color: #d5004e;
+   color: white;
+   border-radius: 5px;
+   font-family: inherit;
+ }
+ .active-c{
+   padding:5px;
+   background-color: #05d056;
+   color: white;
+   font-family: inherit;
+   border-radius: 5px;
+ }
  .logo{
 	min-width:120px !important;
 	max-width: 120px !important;

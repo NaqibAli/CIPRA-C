@@ -17,6 +17,9 @@ else{
     header("Location:./register.php?action=verify");
   }
   }
+  else {
+    header("Location:./index.php");
+  }
 
 
 }
@@ -340,20 +343,18 @@ else{
               
             </div>
             
-            <div id="patentList">
+            <div id="patentList" class="table-responsive">
               
               <table class="data-table table stripe hover nowrap">
                 <thead>
                   <tr>
-                    <th class="table-plus datatable-nosort">Name</th>
-									<th>id</th>
-									<th>aplicationnumber</th>
-									<th>C_name</th>
-									<th>applicationtype</th>
-                  <th>titleofwork</th>
-                  <th>issuedate</th>
-                  <th>licenno</th>
-                  <th>pending</th>
+									<th>Aplication Number</th>
+									<th>Company name</th>
+									<th>Application Type</th>
+                  <th>Title</th>
+                  <th>Issuedate</th>
+                  <th>Licence No</th>
+                  <th>Pending</th>
 									<th class="datatable-nosort">Action</th>
 								</tr>
 							</thead>
@@ -618,6 +619,8 @@ else{
   <script src="./scripts/registrations.js"></script>
   <script src="./src/scripts/helper.js"></script>
   <script src="./scripts/get.js"></script>
+  <script src="./scripts/jquery.validate.min.js"></script>
+<script src="./scripts/validations.js"></script>
   <script>
   patent();
   </script>

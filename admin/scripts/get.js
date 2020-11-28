@@ -24,7 +24,7 @@ function getcompanies(){
                           <td>${company.fullname}</td>
                           <td>${company.issuedate}</td>
                           <td>${company.expiredate}</td>
-                          <td>${(company.pending==1)?"Waiting":"Active"}</td>
+                          <td><span class="${(company.pending==1)? "waiting" : "active-c" }">${(company.pending==1)?"Waiting":"Active"}</span></td>
                           <td>
                             <div class="dropdown">
                               <a
@@ -59,7 +59,6 @@ function getcompanies(){
          }
       
       }});
-<<<<<<< HEAD
 }
 
 function gettrademark(){
@@ -86,8 +85,8 @@ function gettrademark(){
                         ${company.titleofwork}
                         </td>
                         <td>${company.issuedate}</td>
-                        <td>${company.licenno}</td>
-                        <td>${(company.pending==1)?"Waiting":"Active"}</td>
+                        <td>${(company.licenno=="")?"Waiting":company.licenno}</td>
+                        <td><span class="${(company.pending==1)? "waiting" : "active-c" }">${(company.pending==1)?"waiting":"active"}</span></td>
                         <td>
                           <div class="dropdown">
                             <a
@@ -149,7 +148,7 @@ function patent(){
                         </td>
                         <td>${company.issuedate}</td>
                         <td>${company.licenno}</td>
-                        <td>${(company.pending==1)?"Waiting":"Active"}</td>
+                        <td><span class="${(company.pending==1)? "waiting" : "active-c" }">${(company.pending==1)?"waiting":"active"}</span></td>
                         <td>
                           <div class="dropdown">
                             <a
@@ -187,7 +186,7 @@ function patent(){
 }
 
 function copyright(){
-  let patent="";
+  let copyrightlist="";
   $.ajax({
       url: "./api/api.php", 
       method:"POST",
@@ -199,7 +198,7 @@ function copyright(){
        let data =result.data;
        if(status){
           data.forEach(company => {
-             patent+=`
+             copyrightlist+=`
              <tr role="row" data-id="${company.id}">
                         <td class="table-plus sorting_1" tabindex="0">
                         ${company.aplicationnumber}
@@ -211,7 +210,7 @@ function copyright(){
                         </td>
                         <td>${company.issuedate}</td>
                         <td>${company.licenno}</td>
-                        <td>${(company.pending==1)?"Waiting":"Active"}</td>
+                        <td><span class="${(company.pending==1)? "waiting" : "active-c" }">${(company.pending==1)?"waiting":"active"}</span></td>
                         <td>
                           <div class="dropdown">
                             <a
@@ -239,13 +238,11 @@ function copyright(){
                       </tr>
              `; 
           });
-          $("#patent-tbl").html(patent);
+          $("#copyright-tbl").html(copyrightlist);
        }
        else{
            alert(data);
        }
     
     }});
-=======
->>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
 }

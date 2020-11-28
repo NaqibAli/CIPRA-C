@@ -33,6 +33,9 @@ function login($conn)
                 $_SESSION['name'] = $row['fullname'];
                 $_SESSION['proffession'] = $row['proffession'];
             }
+            elseif($usertype==1){
+                $_SESSION['name']=$row['Name'];
+            }
             
             $_SESSION['usertype']=$usertype;
             $_SESSION['userid'] = $row['id'];
@@ -58,11 +61,8 @@ function OwnerReg($conn){
         if ($row['message']) {
             $data = array("status" => true, "data" => $row['message']);
             $_SESSION['email']=$email;
-<<<<<<< HEAD
             sendemail($code,$email);
-=======
             sendemail($row['Vcode'],$email);
->>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
         } else {
             $data = array("status" => false, "data" => "error");
             
@@ -271,7 +271,6 @@ function getCompanies($conn){
     }
 
     echo json_encode($data);
-<<<<<<< HEAD
 }
 
 function gettrademark($conn){
@@ -356,6 +355,4 @@ function getpatent($conn){
     }
 
     echo json_encode($data);
-=======
->>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
 }

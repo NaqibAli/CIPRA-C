@@ -7,15 +7,18 @@ if(!$_SESSION['isloged']==1)
   header("Location:./login.php");
 }
 else{
-  if($_SESSION['usertype']==2){
-    if ($_SESSION['isverified']==1) {
-      if($_SESSION['iscompleted']==0){
-        header("Location:./profile.php?action=completeprofile");
-    }
-  }  
-  else{
-    header("Location:./register.php?action=verify");
-  }
+  // if($_SESSION['usertype']==2){
+  //   if ($_SESSION['isverified']==1) {
+  //     if($_SESSION['iscompleted']==0){
+  //       header("Location:./profile.php?action=completeprofile");
+  //   }
+  // }  
+  // else{
+  //   header("Location:./register.php?action=verify");
+  // }
+  // }
+  if (!($_SESSION['usertype']==3 || $_SESSION['usertype']==2)) {
+    header("Location:./index.php");
   }
 
 

@@ -17,6 +17,9 @@ else{
     header("Location:./register.php?action=verify");
   }
   }
+  else {
+    header("Location:./index.php");
+  }
 
 
 }
@@ -337,19 +340,18 @@ else{
               </div>
             </div>
             
-            <div id="trademarkList">
+            <div id="trademarkList" class="table-responsive">
             
             <table class="data-table table stripe hover nowrap">
 							<thead>
 								<tr>
-									<th class="table-plus datatable-nosort">ID</th>
 									<th>ApplictionNumber</th>
-									<th>Companyname</th>
-									<th>AppliectionType</th>
+									<th>Company Name</th>
+									<th>Appliection Type</th>
 									<th>Title of work</th>
                   <th>issuedate</th>
                   <th>licenno</th>
-                  <th>peding</th>
+                  <th>pending</th>
 									<th class="datatable-nosort">Action</th>
 								</tr>
 							</thead>
@@ -379,8 +381,8 @@ else{
                             <div class="form-group">
                               <label>Application Type :</label>
                               <select class="form-control selectpicker" name="applic_type">
-                                <option value="1">Local</option>
-                                <option value="2" >Forieng</option>
+                                <option value="Local">Local</option>
+                                <option value="Forieng" >Forieng</option>
                               </select>
                             </div>
                           </div>
@@ -574,7 +576,7 @@ else{
                   <div class="mb-30 text-center">
                     <img src="vendors/images/success.png" />
                   </div>
-                  Confirmination Email Was Sent to Director Email
+                  
                 </div>
                 <div class="modal-footer justify-content-center">
                   <button
@@ -614,6 +616,8 @@ else{
   <script src="./scripts/registrations.js"></script>
   <script src="./src/scripts/helper.js"></script>
   <script src="./scripts/get.js"></script>
+  <script src="./scripts/jquery.validate.min.js"></script>
+<script src="./scripts/validations.js"></script>
   <script>
     gettrademark();
     </script>

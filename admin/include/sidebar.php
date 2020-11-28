@@ -21,6 +21,7 @@ $usertype = $_SESSION['usertype'];
                 ><span class="mtext">Home</span>
               </a>
             </li>
+            <?php if($usertype==2){ ?>
             <li class="dropdown">
               <a href="javascript:;" class="dropdown-toggle">
                 <span class="micon dw dw-edit2"></span
@@ -30,10 +31,11 @@ $usertype = $_SESSION['usertype'];
                 <li>
                   <a href="./register_bussiness.php">Register New Company</a>
                 </li>
-                <li><a href="./Edit_business.php">Edit Company</a></li>
+                <li><a href="./Edit_business.php">View Company</a></li>
               </ul>
             </li>
-            <?php if($usertype == 1){?>
+           
+            <?php } if ($usertype == 1) {?>
             <li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle" data-option="off">
 							<span class="micon dw dw-list3"></span><span class="mtext">Applications</span>
@@ -52,12 +54,21 @@ $usertype = $_SESSION['usertype'];
 							</li>
 						</ul>
           </li>
-            <?php } ?>
-            <!-- <li>
-						<a href="javascript:" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-list"></span><span class="mtext">My bussiness</span>
-						</a>
-          </li> -->
+          <li class="dropdown">
+              <a href="javascript:;" class="dropdown-toggle">
+                <span class="micon dw dw-user-2"></span
+                ><span class="mtext">User Managementt</span>
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a href="./register_bussiness.php">Add New User</a>
+                </li>
+                <li><a href="./Edit_business.php">Edit User</a></li>
+              </ul>
+            </li>
+            <?php }?>
+
+              <?php if($usertype==2){ ?>
           <li class="dropdown">
             <a href="javascript:;" class="dropdown-toggle">
               <span class="micon dw dw-building"></span
@@ -69,6 +80,20 @@ $usertype = $_SESSION['usertype'];
               <li><a href="./copyright.php">Copyright</a></li>
             </ul>
           </li>
+              <?php } if($usertype==3){?>
+                <li>
+              <a href="./search_registry.php" class="dropdown-toggle no-arrow">
+                <span class="micon dw dw-building"></span
+                ><span class="mtext">Company</span>
+              </a>
+            </li>
+            <li>
+              <a href="./search_registry.php" class="dropdown-toggle no-arrow">
+                <span class="micon dw dw-file"></span
+                ><span class="mtext">Documents</span>
+              </a>
+            </li>
+              <?php }?>
             <li>
               <a href="./search_registry.php" class="dropdown-toggle no-arrow">
                 <span class="micon dw dw-search2"></span
