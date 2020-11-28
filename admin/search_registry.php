@@ -186,29 +186,12 @@ include "include/sidebar.php";
 					</div>
 				</div> -->
 				<div class="search-icon-box bg-white box-shadow border-radius-10 mb-30">
-					<input type="text" class="border-radius-10" id="filter_input" placeholder="Enter Company ID or Company Name..." title="Type in a name ">
-					<i class="search_icon dw dw-search "></i>
+					<input type="text" class="border-radius-10" id="searchCompany" placeholder="Enter Company ID or Company Name..." title="Type in a name ">
+					<i class="search_icon dw dw-search"></i>
 				</div>
-				<div class="row m-1 rounded">
-					<div class="col-md-3 m-1 card">
-					<div class="card-body text-center">
-						<img src="./src/images/banner-img.png" class="d-company-logo ml-auto" alt="">
-						<div class="text-content">
-							<h5 class="my-3">Name: Hormuud Telecom</h5>
-						<p class="text-secondary">ID: 21343232535</p>
-						</div>
-
-						<button class="btn btn-outline-primary my-2 w-75 btn-lg">More Info</button>
-					</div>
-				</div>
-					<div class="col-md-3 m-1 card">
-					<div class="card-body">
-						<img src="./src/images/hrlogo.png"  class="d-company-logo ml-auto" alt="">
-						<h5 class="my-3">Name: Hormuud Telecom</h5>
-						<p class="text-secondary">ID: 21343232535</p>
-						<button class="btn btn-outline-primary my-2 w-75 btn-lg">More Info</button>
-					</div>
-				</div>
+				<div class="row m-1 rounded" id="search-result">
+					
+		
 				</div>
 
 			</div>
@@ -223,5 +206,6 @@ include "include/sidebar.php";
 	<script src="vendors/scripts/script.min.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
+	<script src="./scripts/search.js"></script>
 </body>
 </html>

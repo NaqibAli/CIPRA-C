@@ -24,7 +24,15 @@ $("#submitcopyright").click(()=>{
 
          
          if(status){
-             alert(data);
+            swal(
+                {
+                    position: 'center',
+                    type: 'success',
+                    title: data,
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+
              $("#cregisterModal").modal('hide');
              $("#copyright")[0].reset();
          }
@@ -60,9 +68,18 @@ $("#Trademark").click(()=>{
 
          
          if(status){
-             alert(data);
-             $("#cregisterModal").modal('hide');
-             $("#copyright")[0].reset();
+            swal(
+                {
+                    position: 'center',
+                    type: 'success',
+                    title: data,
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            $("#tradeRegis")[0].reset();
+             $("#registerModal").modal('hide');
+          
+             
          }
          else{
              alert("Error");
@@ -95,9 +112,17 @@ $("#patentregistration").click(()=>{
 
          
          if(status){
-             alert(data);
-             $("#cregisterModal").modal('hide');
-             $("#copyright")[0].reset();
+             swal(
+                {
+                    position: 'center',
+                    type: 'success',
+                    title: data,
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            $("#patentform")[0].reset();
+             $("#registerModal").modal('hide');
+            
          }
          else{
              alert("Error");

@@ -53,6 +53,7 @@
       href="src/plugins/jquery-steps/jquery.steps.css"
     />
     <link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/sweetalert2/sweetalert2.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -806,6 +807,7 @@
 	<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
   <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
   
+  <script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
   <script src="vendors/scripts/datatable-setting.js"></script>
   <script src="./scripts/registrations.js"></script>
   </body>

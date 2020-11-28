@@ -28,3 +28,12 @@ $("#comp_form").on("change",(e)=>{
 
    }
 })
+
+$("#logo-picker").click(()=>{
+    $("#company-logo").click();
+    
+   
+})
+$("#company-logo").on("change",(e)=>{
+console.log($("#company-logo").val())
+});
