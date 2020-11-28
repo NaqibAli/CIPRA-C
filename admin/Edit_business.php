@@ -328,6 +328,16 @@
                             class="table-plus datatable-nosort sorting_asc"
                             rowspan="1"
                             colspan="1"
+                            aria-label="CompanyId"
+                          >
+                            Company ID
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
                             aria-label="Name"
                           >
                             Name
@@ -338,9 +348,9 @@
                             aria-controls="DataTables_Table_0"
                             rowspan="1"
                             colspan="1"
-                            aria-label="Age: activate to sort column ascending"
+                            aria-label="location: activate to sort column ascending"
                           >
-                            Age
+                            Location/city
                           </th>
                           <th
                             class="sorting"
@@ -348,9 +358,9 @@
                             aria-controls="DataTables_Table_0"
                             rowspan="1"
                             colspan="1"
-                            aria-label="Office: activate to sort column ascending"
+                            aria-label="Phone: activate to sort column ascending"
                           >
-                            Office
+                            Phone
                           </th>
                           <th
                             class="sorting"
@@ -358,9 +368,9 @@
                             aria-controls="DataTables_Table_0"
                             rowspan="1"
                             colspan="1"
-                            aria-label="Address: activate to sort column ascending"
+                            aria-label="directorname: activate to sort column ascending"
                           >
-                            Address
+                            Director Name
                           </th>
                           <th
                             class="sorting"
@@ -368,9 +378,29 @@
                             aria-controls="DataTables_Table_0"
                             rowspan="1"
                             colspan="1"
-                            aria-label="Start Date: activate to sort column ascending"
+                            aria-label="Issuedate: activate to sort column ascending"
                           >
-                            Start Date
+                            Issue Date
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="ExpireDate: activate to sort column ascending"
+                          >
+                            Expire date
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="ExpireDate: activate to sort column ascending"
+                          >
+                            Status
                           </th>
                           <th
                             class="datatable-nosort sorting_disabled"
@@ -382,365 +412,8 @@
                           </th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr role="row" class="odd">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>30</td>
-                          <td>Gemini</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                                style=""
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="even">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>20</td>
-                          <td>Gemini</td>
-                          <td>2829 Trainer Avenue Peoria, IL 61602</td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="odd">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>30</td>
-                          <td>Sagittarius</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="even">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>25</td>
-                          <td>Gemini</td>
-                          <td>2829 Trainer Avenue Peoria, IL 61602</td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="odd">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>20</td>
-                          <td>Sagittarius</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="even">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>18</td>
-                          <td>Gemini</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="odd">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>30</td>
-                          <td>Sagittarius</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="even">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>30</td>
-                          <td>Sagittarius</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="odd">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>30</td>
-                          <td>Gemini</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr role="row" class="even">
-                          <td class="table-plus sorting_1" tabindex="0">
-                            Andrea J. Cagle
-                          </td>
-                          <td>30</td>
-                          <td>Gemini</td>
-                          <td>
-                            1280 Prospect Valley Road Long Beach, CA 90802
-                          </td>
-                          <td>29-03-2018</td>
-                          <td>
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-toggle="dropdown"
-                              >
-                                <i class="dw dw-more"></i>
-                              </a>
-                              <div
-                                class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                              >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-eye"></i> View</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-edit2"></i> Edit</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><i class="dw dw-delete-3"></i> Delete</a
-                                >
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
+                      <tbody id="company-tbl">
+                      
                       </tbody>
                     </table>
                   </div>
@@ -777,5 +450,9 @@
     <script src="src/plugins/datatables/js/vfs_fonts.js"></script>
     <!-- Datatable Setting js -->
     <script src="vendors/scripts/datatable-setting.js"></script>
+    <script src="./scripts/get.js"></script>
+    <script>
+    getcompanies();
+    </script>
   </body>
 </html>

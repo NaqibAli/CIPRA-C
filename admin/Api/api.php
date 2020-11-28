@@ -58,6 +58,7 @@ function OwnerReg($conn){
         if ($row['message']) {
             $data = array("status" => true, "data" => $row['message']);
             $_SESSION['email']=$email;
+            sendemail($code,$email);
         } else {
             $data = array("status" => false, "data" => "error");
             
@@ -152,11 +153,19 @@ function registerCompany($conn){
     $userid=$_SESSION['userid'];
     extract($_POST);
     $data = [];
-    $logo="";
-    $file="";
-    $query = "CALL Companyregistration($userid,'$company_name','$comp_type','$enit_num','$cont_num','$com_email','$logo','$file','$passconde','$stree_add','$city','$state','$dire_name','$id_num','$profession','$academy_level','$director_email','$Pass')";
+    $logo=$_FILES['logo'];
+    $logoname=$logo['name'];
+    $ext=explode(".",$logoname);
+    // print_r($ext[count($ext)-1]);
+    $dest="../logos/".$company_name."-".uniqid().".".$ext[count($ext)-1];
+ $file="";
+    if(move_uploaded_file($logo['tmp_name'],$dest)){
+        
+    $query = "CALL Companyregistration($userid,'$company_name','$comp_type','$enit_num','$cont_num','$com_email','$dest','$file','$passconde','$stree_add','$city','$state','$dire_name','$id_num','$profession','$academy_level','$director_email','$Pass')";
 
     $result = $conn->query($query);
+    } 
+
     if($result){
        $row = $result->fetch_assoc(); 
        //key value 
@@ -176,4 +185,166 @@ function registerCompany($conn){
     }
     echo  json_encode($data);
 
+}
+
+function searchCompany($conn){
+    extract($_POST);
+
+    $query = "call searchCompany('$q')";
+
+    $res = $conn->query($query);
+    $data = [];
+    $rows=[];
+    if ($res) {
+       
+        if ($res->num_rows > 0) {
+            while ($row = $res->fetch_assoc()) {
+                $rows[]=$row;
+            }
+            $data = array("status" => true, "data" => $rows);
+        } else {
+            $data = array("status" => false, "data" => "No Company Founded");            
+        }
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
+}
+
+function sendemail($code,$email){
+    $to = $email;
+    $subject = "CIPRA Email Verification";
+
+    $message = "
+    <html>
+    <head>
+    <title>Email Verification</title>
+    </head>
+    <body>
+    <p>Verification Code : <strong>${code}</strong></p>
+    </body>
+    </html>
+    ";
+
+    // Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    // More headers
+    $headers .= 'From: <noreplay@srs.so>' . "\r\n";
+
+
+    mail($to,$subject,$message,$headers);
+
+}
+
+function getCompanies($conn){
+    $uid=$_SESSION['userid'];
+
+    $query = "call show_comp_regis('$uid')";
+
+    $res = $conn->query($query);
+    $data = [];
+    if ($res) {
+        $row = $res->fetch_assoc();
+        while($row = $res->fetch_assoc()){
+            $data[]=$row;
+        }
+        if ($res->num_rows>0) {
+            $data = array("status" => true, "data" => $data);
+        }
+        else {
+            $data = array("status" => false, "data" => "No Data Found"); 
+        }
+        
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
+}
+
+function gettrademark($conn){
+    $uid=$_SESSION['userid'];
+    $trade="trademark";
+
+    $query = "call show_intellec_reg('$uid','$trade')";
+
+    $res = $conn->query($query);
+    $data = [];
+    if ($res) {
+        $row = $res->fetch_assoc();
+        while($row = $res->fetch_assoc()){
+            $data[]=$row;
+        }
+        if ($res->num_rows>0) {
+            $data = array("status" => true, "data" => $data);
+        }
+        else {
+            $data = array("status" => false, "data" => "No Data Found"); 
+        }
+        
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
+}
+
+
+function getcopyright($conn){
+    $uid=$_SESSION['userid'];
+    $copy="copyright";
+
+    $query = "call show_intellec_reg('$uid','$copy')";
+
+    $res = $conn->query($query);
+    $data = [];
+    if ($res) {
+        $row = $res->fetch_assoc();
+        while($row = $res->fetch_assoc()){
+            $data[]=$row;
+        }
+        if ($res->num_rows>0) {
+            $data = array("status" => true, "data" => $data);
+        }
+        else {
+            $data = array("status" => false, "data" => "No Data Found"); 
+        }
+        
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
+}
+
+
+
+function getpatent($conn){
+    $uid=$_SESSION['userid'];
+    $copy="patent";
+
+    $query = "call show_intellec_reg('$uid','$copy')";
+
+    $res = $conn->query($query);
+    $data = [];
+    if ($res) {
+        $row = $res->fetch_assoc();
+        while($row = $res->fetch_assoc()){
+            $data[]=$row;
+        }
+        if ($res->num_rows>0) {
+            $data = array("status" => true, "data" => $data);
+        }
+        else {
+            $data = array("status" => false, "data" => "No Data Found"); 
+        }
+        
+    } else {
+        $data = array("status" => false, "data" => $res);
+    }
+
+    echo json_encode($data);
 }

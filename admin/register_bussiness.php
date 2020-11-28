@@ -303,7 +303,7 @@
               <p class="mb-30">Fill form to register new bussiness</p>
             </div>
             <div class="wizard-content">
-              <form class="tab-wizard wizard-circle wizard" id="reg_business">
+              <form class="tab-wizard wizard-circle wizard" id="reg_business" enctype="multipart/form-data">
                 <h5>Business Information</h5>
                 <section>
                   <div class="row">
@@ -344,16 +344,16 @@
 
                         <img
                           src="../assets/img/patent2.jpg"
-                          class="rounded-circle"
-                          width="100"
-                          height="200"
+                          class="logo"
+                          id="logo-picker"
                         />
 
                         <input
+                        accept="image/*"
                           type="file"
                           name="logo"
                           id="company-logo"
-                          class="form-control custom d-none"
+                          class="d-none"
                         />
                       </div>
                     </div>
@@ -530,6 +530,7 @@
     <script src="vendors/scripts/steps-setting.js"></script>
     <script src="./scripts/registrations.js"></script>
     <script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
+    <script src="./src/scripts/helper.js"></script>
   </body>
 
 </html>

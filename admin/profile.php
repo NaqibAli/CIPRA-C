@@ -6,12 +6,26 @@ session_start();
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+	<title>CIPRA - Companies And Intellectual Property Registration Agency</title>
 
 	<!-- Site favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png">
+	<link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon.png"
+    />
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,6 +37,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
 	<link rel="stylesheet" type="text/css" href="src/plugins/cropperjs/dist/cropper.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="src/plugins/sweetalert2/sweetalert2.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -529,10 +544,12 @@ session_start();
 																	<label>Full Name</label>
 																	<input class="form-control form-control" name="Full_Name"type="text">
 																</div></div>
-																<div class="col-6"><div class="form-group">
+																<div class="col-6">
+																	<div class="form-group">
 																	<label>Nationality</label>
 																	<select name="nationality" class="selectpicker form-control nationality"></select>
-																</div></div>
+																</div>
+															</div>
 																<div class="col-6"><div class="form-group">
 																	<label>Date of birth</label>
 																	<input class="form-control form-control date-picker" name="Date_of_birth" type="text">
@@ -643,7 +660,8 @@ session_start();
 				</div>
 			</div>
 			<div class="footer-wrap pd-20 mb-20 card-box">
-				DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
+			CIPRA - Companies And Intellectual Property Registration Agency,
+          	Developed by <a href="javascript:" target="_blank">HanTech</a>
 			</div>
 		</div>
 	</div>
@@ -655,6 +673,7 @@ session_start();
 	<script src="src/plugins/cropperjs/dist/cropper.js"></script>
 	<script src="src/scripts/helper.js"></script>
 	<script src="./scripts/Profile.js"></script>
+    <script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
 	<script>
 		
 		window.addEventListener('DOMContentLoaded', function () {
