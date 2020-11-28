@@ -58,7 +58,11 @@ function OwnerReg($conn){
         if ($row['message']) {
             $data = array("status" => true, "data" => $row['message']);
             $_SESSION['email']=$email;
+<<<<<<< HEAD
             sendemail($code,$email);
+=======
+            sendemail($row['Vcode'],$email);
+>>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
         } else {
             $data = array("status" => false, "data" => "error");
             
@@ -222,7 +226,11 @@ function sendemail($code,$email){
     <title>Email Verification</title>
     </head>
     <body>
+<<<<<<< HEAD
     <p>Verification Code : <strong>${code}</strong></p>
+=======
+    <p>Verification Code : <strong>$code</strong></p>
+>>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
     </body>
     </html>
     ";
@@ -263,6 +271,7 @@ function getCompanies($conn){
     }
 
     echo json_encode($data);
+<<<<<<< HEAD
 }
 
 function gettrademark($conn){
@@ -347,4 +356,6 @@ function getpatent($conn){
     }
 
     echo json_encode($data);
+=======
+>>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
 }

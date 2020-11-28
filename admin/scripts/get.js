@@ -59,6 +59,7 @@ function getcompanies(){
          }
       
       }});
+<<<<<<< HEAD
 }
 
 function gettrademark(){
@@ -245,4 +246,6 @@ function copyright(){
        }
     
     }});
+=======
+>>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
 }
