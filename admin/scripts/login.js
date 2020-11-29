@@ -28,7 +28,7 @@ $("#loginform").on("submit",(e)=>{
                     type: 'error',
                     title: (data == 'invalid')?"Incorrect Credential":"You account Is Blocked, Please Contact System Administrator",
                     showConfirmButton: false,
-                    timer: 2500
+                    timer: 3000
                 }); 
          }
       

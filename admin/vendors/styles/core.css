@@ -18,6 +18,9 @@
    font-family: inherit;
    border-radius: 5px;
  }
+ .error{
+	color:red;
+}
  .logo{
 	min-width:120px !important;
 	max-width: 120px !important;

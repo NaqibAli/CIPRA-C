@@ -1,44 +1,4 @@
-// Wait for the DOM to be ready
-$(function() {
-    $("#loginform").validate({
-      
-      rules: {
-        username: "required",
-        password: "required",
-        email: {
-          required: true,
-          email: true
-        },
-        password: {
-          required: true,
-        
-        }
-      },
-      // Specify validation error messages
-      messages: {
-        username: "Please enter your username",
-        // password: "Please enter your password",
-        password: {
-          required: "Please provide a password",
-          
-        },
-        email: "Please enter a valid email address"
-      },
-      // Make sure the form is submitted to the destination defined
-      // in the "action" attribute of the form when valid
-      submitHandler: function(form) {
-        form.submit();
-      }
-    });
 
-
-  });
-
-
-
-  //sign up validations
-
-  $(function() {
  
     $("#user-registration").validate({
 
@@ -86,12 +46,6 @@ $(function() {
       }
     });
 
-    
-  });
-
-  // profile form validations
-
-  $(function() {
     // Initialize form validation on the registration form.
     // It has the name attribute "registration"
     $("#profile").validate({
@@ -134,13 +88,6 @@ $(function() {
       }
     });
 
-    
-  });
-
-  // business Registratiion
-
-
-  $(function() {
     // Initialize form validation on the registration form.
     // It has the name attribute "registration"
     $("#profile").validate({
@@ -190,13 +137,6 @@ $(function() {
       }
     });
 
-    
-  });
-
-
-  // trademark validations
-
-  $(function() {
 
     $("#profile").validate({
   
@@ -238,13 +178,6 @@ $(function() {
       }
     });
 
-    
-  });
-
-  // business Registratiion
-
-
-  $(function() {
 
     $("#tradeRegis").validate({
       rules: {
@@ -298,14 +231,6 @@ $(function() {
       }
     });
 
-    
-  });
-
-
-  //patient validations
-
-
-  $(function() {
 
     $("#patentform").validate({
       rules: {
@@ -360,12 +285,6 @@ $(function() {
     });
 
     
-  });
-
-  //copyRight validations 
-
-
-  $(function() {
 
     $("#copyright").validate({
       rules: {
@@ -418,6 +337,3 @@ $(function() {
         form.submit();
       }
     });
-
-    
-  });

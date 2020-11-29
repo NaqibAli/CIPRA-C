@@ -105,32 +105,32 @@ session_start();
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Full Name*</label>
                       <div class="col-sm-8">
-                        <input type="text" name="name"class="form-control">
+                        <input type="text" name="name" class="form-control" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Email Address*</label>
                       <div class="col-sm-8">
-                        <input type="email" name="email"class="form-control">
+                        <input type="email" name="email" class="form-control" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Phone*</label>
                       <div class="col-sm-8">
-                        <input type="phone" name="phone"class="form-control">
+                        <input type="phone" name="phone" class="form-control" required>
                       
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Password*</label>
                       <div class="col-sm-8">
-                        <input type="password" name="password" class="form-control">
+                        <input type="password" name="password" class="form-control" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label class="col-sm-4 col-form-label">Confirm Password*</label>
                       <div class="col-sm-8">
-                        <input type="password" name="confirm_password" class="form-control">
+                        <input type="password" name="confirm_password" class="form-control" required>
                       </div>
                     </div>
                   </div>
@@ -172,14 +172,14 @@ session_start();
     <!-- success Popup html End -->
     <!-- js -->
     <script src="vendors/scripts/core.js"></script>
+    <script src="./scripts/jquery.validate.min.js"></script>
     <script src="vendors/scripts/script.min.js"></script>
     <script src="vendors/scripts/process.js"></script>
     <script src="vendors/scripts/layout-settings.js"></script>
     <script src="src/plugins/jquery-steps/jquery.steps.js"></script>
     <script src="vendors/scripts/steps-setting.js"></script>
     <script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
+    <!-- <script src="./scripts/validations.js"></script> -->
     <script src="./scripts/register.js"></script>
-    <script src="./scripts/jquery.validate.min.js"></script>
-<script src="./scripts/validations.js"></script>
   </body>
 </html>
