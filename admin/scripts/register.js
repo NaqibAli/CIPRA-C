@@ -14,10 +14,25 @@ e.preventDefault();
          let status=result.status;
          let data =result.data;
          if(status){
-             window.location.href="./register.php?action=verify";
+            if (data != 'already_registred') {
+                window.location.href="./register.php?action=verify";
+                
+            } else {
+                swal(
+                    {
+                        position: 'center',
+                        type: 'error',
+                        title: "This Email is Already In use",
+                        showConfirmButton: false,
+                        timer: 3000
+                    });
+                
+            }
+
+             
          }
          else{
-             alert("Error");
+             
          }
       
       }});
@@ -56,7 +71,7 @@ $("#verification").on("submit",(e)=>{
                         timer: 2000
                     }); 
                 setTimeout(() => {
-                    window.location.href="./index.php";
+                    window.location.href="./login.php";
                 }, 2000);
 
              }
@@ -69,10 +84,10 @@ $("#verification").on("submit",(e)=>{
             swal(
                 {
                     position: 'center',
-                    type: 'success',
+                    type: 'error',
                     title: "Verification Code Is Incorrect",
                     showConfirmButton: false,
-                    timer: 2000
+                    timer: 2500
                 });
          }
       

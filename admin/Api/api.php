@@ -33,7 +33,7 @@ function login($conn)
                 $_SESSION['name'] = $row['fullname'];
                 $_SESSION['proffession'] = $row['proffession'];
             }
-            elseif($usertype==1){
+            elseif($usertype==1 || $usertype==4){
                 $_SESSION['name']=$row['Name'];
             }
             
@@ -61,8 +61,10 @@ function OwnerReg($conn){
         if ($row['message']) {
             $data = array("status" => true, "data" => $row['message']);
             $_SESSION['email']=$email;
-            sendemail($code,$email);
-            sendemail($row['Vcode'],$email);
+            if ($row['message'] != 'already_registred') {
+                sendemail($row['Vcode'],$email);
+            }
+            
         } else {
             $data = array("status" => false, "data" => "error");
             
@@ -219,20 +221,60 @@ function searchCompany($conn){
 function sendemail($code,$email){
     $to = $email;
     $subject = "CIPRA Email Verification";
-
+    $year=date("Y");
     $message = "
-    <html>
-    <head>
-    <title>Email Verification</title>
-    </head>
-    <body>
-<<<<<<< HEAD
-    <p>Verification Code : <strong>${code}</strong></p>
-=======
-    <p>Verification Code : <strong>$code</strong></p>
->>>>>>> 1560c5d76c0b1fdbeb23e2b47d36d8bec49f70b5
-    </body>
-    </html>
+    <!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>CIPRA - Companies And Intellectual Property Registration Agency</title>
+  </head>
+  <body style='margin: 0;
+  padding: 0;
+  font-family:Tahoma, Geneva, Verdana, sans-serif;'>
+    <header style='padding: 5px; padding-left:25px;
+    background-color: #17b978;
+    color: white;'>
+      <h5 style='font-size: 30px;'>CIPRA</h5>
+      <p style='font-size: 20px;'>Companies And Intellectual Property Registration Agency</p>
+    </header>
+    <div style=' height: 100%;
+    margin: 15px;
+    margin-top: 10%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;'>
+      <p>
+        Verification Code is <br /><br />
+        <span style='font-size: 30px;
+        color: blue;
+        border-bottom: 2px dashed orange;'>$code</span>
+      </p>
+      <br />
+      <p>For More Info About CIPRA, Contact us info@srs.so</p>
+      <br />
+    </div>
+    <footer
+      style='
+        padding: 25px;
+        background-color: #17b978;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 20px;
+      '
+    >
+      <div style=' display: flex;
+      justify-content: space-around;'>
+        <p>&copy; 2020-${year} CIPRA</p>
+        <h5>Developed by <a href='javascript:' style='color: inherit;
+            text-decoration: none;'>Hantech</a></h5>
+      </div>
+    </footer>
+  </body>
+</html>
     ";
 
     // Always set content-type when sending HTML email

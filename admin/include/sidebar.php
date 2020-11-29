@@ -35,16 +35,16 @@ $usertype = $_SESSION['usertype'];
               </ul>
             </li>
            
-            <?php } if ($usertype == 1) {?>
+            <?php } if ($usertype == 1 || $usertype == 4) {?>
             <li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle" data-option="off">
 							<span class="micon dw dw-list3"></span><span class="mtext">Applications</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="javascript:;">Companies</a></li>
+							<li><a href="./company_applications.php">Companies</a></li>
 							<li class="dropdown">
 								<a href="javascript:;" class="dropdown-toggle" data-option="off">
-                <span class="micon dw dw-building"></span><span class="mtext">Intellectual Property</span>
+                <span class="micon dw dw-building"></span><span class="mtext">IP Applications</span>
 								</a>
 								<ul class="submenu child">
 									<li><a href="javascript:;">Trademark</a></li>
@@ -54,6 +54,7 @@ $usertype = $_SESSION['usertype'];
 							</li>
 						</ul>
           </li>
+            <?php } if($usertype==1){?>
           <li class="dropdown">
               <a href="javascript:;" class="dropdown-toggle">
                 <span class="micon dw dw-user-2"></span
