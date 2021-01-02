@@ -395,7 +395,7 @@ else{
                             type="file"
                             multiple
                             class="custom-file-input"
-                            name="file"
+                            name="docs[]"
                           />
                           <label class="custom-file-label">Choose files</label>
                         </div>

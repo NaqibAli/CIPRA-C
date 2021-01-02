@@ -374,13 +374,8 @@ else{
                   <div class="p-1">
                     <form id="patentform">
                         <div class="row">
-                          <div class="col-md-4">
-                            <div class="form-group">
-                              <label>Application Number :</label>
-                              <input type="text" name="appl_num" class="form-control" />
-                            </div>
-                          </div>
-                          <div class="col-md-4">
+                          
+                          <div class="col-md-6">
                             <div class="form-group">
                               <label>Application Type :</label>
                               <select class="form-control selectpicker" name="applic_type">
@@ -389,7 +384,7 @@ else{
                               </select>
                             </div>
                           </div>
-                          <div class="col-md-4">
+                          <div class="col-md-6">
                             <div class="form-group">
                               <label>Patent Type :</label>
                              <input type="text" name="ip_type" class="form-control">
@@ -408,10 +403,8 @@ else{
                           <div class="col-md-4" id="mc-parent">
                             <div class="form-group">
                               <label>Your Companies :</label>
-                              <select class="form-control selectpicker" name="mycompanies">
-                                <option value="1">Company 1</option>
-                                <option value="2">Company 2</option>
-                                <option value="2">Company 3</option>
+                              <select class="form-control selectpicker companies" name="mycompanies">
+                               
                               </select>
                             </div>
                           </div>
@@ -459,22 +452,11 @@ else{
                                     <div class="col-md-6">
                                       <div class="form-group">
                                         <label>Comapny Logo :</label>
-                
-                                        <img
-                                          src="../assets/img/patent2.jpg"
-                                          class="rounded-circle"
-                                          width="100"
-                                          height="200"
-                                          name="Comapny_Logo"
-                                          id="Comapny_Logo"
-                                        />
-                
-                                        <input
-                                          type="file"
-                                          name="logo"
-                                          id="company-logo"
-                                          class="form-control custom d-none"
-                                        />
+                                        <img src="../assets/img/patent2.jpg" class="logo"
+                                                                        id="logo-picker" />
+
+                                                                    <input accept="image/*" type="file" name="logo"
+                                                                        id="company-logo" class="d-none" />
                                       </div>
                                     </div>
                                     <div class="col-md-12">
@@ -488,7 +470,7 @@ else{
                                             type="file"
                                             multiple
                                             class="custom-file-input"
-                                            name="file"
+                                            name="files[]"
                                           />
                                           <label class="custom-file-label">Choose files</label>
                                         </div>
@@ -535,14 +517,14 @@ else{
                             <div class="form-group">
                               <label>Picture/Symbol :</label>
                               <div class="custom-file">
-                                <input type="file" name="picture" class="custom-file-input">
+                                <input type="file" name="symbol" class="custom-file-input">
                                 <label class="custom-file-label">Choose files</label>
                               </div>
                             </div>
                             <div class="form-group">
                               <label>Documents :</label>
                               <div class="custom-file">
-                                <input type="file" name="document" class="custom-file-input">
+                                <input type="file" name="document[]" multiple class="custom-file-input">
                                 <label class="custom-file-label">Choose Document</label>
                               </div>
                             </div>
@@ -623,6 +605,7 @@ else{
 <script src="./scripts/validations.js"></script>
   <script>
   patent();
+  getCompanyNames();
   </script>
   </body>
 </html>

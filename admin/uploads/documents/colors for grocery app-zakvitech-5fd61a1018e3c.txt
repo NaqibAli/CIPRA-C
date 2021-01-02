@@ -1,0 +1,11 @@
+FFA451 for light orange
+FF7051 for full orange 
+000000 for cart background
+
+F9FAFB for product background
+
+7DE0FF  for popular icon
+
+
+
+FEE6A7 for filter background

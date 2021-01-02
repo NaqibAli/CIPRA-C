@@ -21,6 +21,12 @@
  .error{
 	color:red;
 }
+.user-image{
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
  .logo{
 	min-width:120px !important;
 	max-width: 120px !important;

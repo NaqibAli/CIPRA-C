@@ -41,20 +41,20 @@ $usertype = $_SESSION['usertype'];
 							<span class="micon dw dw-list3"></span><span class="mtext">Applications</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="./company_applications.php">Companies</a></li>
+							<li><a href="./company_applications.php">Companies Applications</a></li>
 							<li class="dropdown">
 								<a href="javascript:;" class="dropdown-toggle" data-option="off">
                 <span class="micon dw dw-building"></span><span class="mtext">IP Applications</span>
 								</a>
 								<ul class="submenu child">
-									<li><a href="javascript:;">Trademark</a></li>
-									<li><a href="javascript:;">Copyright</a></li>
-									<li><a href="javascript:;">Patent</a></li>
+									<li><a href="./ip_application.php?type=trademark">Trademark</a></li>
+									<li><a href="./ip_application.php?type=copyright">Copyright</a></li>
+									<li><a href="./ip_application.php?type=patent">Patent</a></li>
 								</ul>
 							</li>
 						</ul>
           </li>
-            <?php } if($usertype==1){?>
+          <?php } if($usertype==1){?>
           <li class="dropdown">
               <a href="javascript:;" class="dropdown-toggle">
                 <span class="micon dw dw-user-2"></span
@@ -62,9 +62,9 @@ $usertype = $_SESSION['usertype'];
               </a>
               <ul class="submenu">
                 <li>
-                  <a href="./register_bussiness.php">Add New User</a>
+                  <a href="./users.php">Add New User</a>
                 </li>
-                <li><a href="./Edit_business.php">Edit User</a></li>
+                <li><a href="./users.php">Edit User</a></li>
               </ul>
             </li>
             <?php }?>
@@ -83,13 +83,13 @@ $usertype = $_SESSION['usertype'];
           </li>
               <?php } if($usertype==3){?>
                 <li>
-              <a href="./search_registry.php" class="dropdown-toggle no-arrow">
+              <a href="./company.php" class="dropdown-toggle no-arrow">
                 <span class="micon dw dw-building"></span
                 ><span class="mtext">Company</span>
               </a>
             </li>
             <li>
-              <a href="./search_registry.php" class="dropdown-toggle no-arrow">
+              <a href="./documents.php?ty=1" class="dropdown-toggle no-arrow">
                 <span class="micon dw dw-file"></span
                 ><span class="mtext">Documents</span>
               </a>

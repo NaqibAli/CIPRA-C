@@ -18,15 +18,16 @@ $("#searchCompany").on("keyup",(e)=>{
              if(status){
                  data.forEach(company => {
                   cards+=`
-                  <div class="col-lg-3 col-md-4 m-1 card">
-					<div class="card-body text-center">
-						<img src="./logos/${company.logo}" class="d-company-logo ml-auto" alt="">
+                  <div class="col-lg-3 col-md-3 m-1 card">
+					<div class="card-body">
+						<img src="./uploads/logos/${company.logo}" class="d-company-logo ml-auto" alt="">
 						<div class="text-content">
-							<h5 class="my-3 text-capitalize">Name: ${company.name}</h5>
+							<h5 class="my-3 text-capitalize">Company: ${company.name}</h5>
 						<p class="text-secondary">ID: ${company.cid}</p>
+						<p class="text-secondary text-capitalize">Location: ${company.location}</p>
 						</div>
 
-						<button class="btn btn-outline-primary my-2 w-100 btn-lg"><i class="dw dw-message"></i>  More Info</button>
+						<button class="btn btn-outline-primary my-2  btn-lg btn-rounded"><i class="dw dw-message"></i>  More Info</button>
 					</div>
 				</div>
                   `;   

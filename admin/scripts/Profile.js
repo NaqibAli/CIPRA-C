@@ -16,7 +16,7 @@ $("#profile").on("submit",(e)=>{
          let status=result.status;
          let data =result.data;
          if(status){
-            //  window.location.href="./index.php";
+            window.location.href="./index.php";
             alert("profile  is completed");
          }
          else{
